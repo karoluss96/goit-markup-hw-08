@@ -39,7 +39,6 @@ header{
   margin: 0 auto;
 }
 
-
 header .index {
   width: 1600px;
   left: 0px;
@@ -120,7 +119,7 @@ header .container{
   margin-right: 127px;
 }
 .list-nav,
-.list-nav1
+.list-nav1,
 .list-menu,
 .list-menu1{
   display: flex;
@@ -520,6 +519,7 @@ main{
 .list-photos figcaption{
   border: 1px solid #EEEEEE;
   border-radius: 0px;
+  margin: 0;
 }
 
 .imagineA {
