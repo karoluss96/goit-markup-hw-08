@@ -15,7 +15,6 @@ p{
 margin: 0;
 }
 header{
-  position: absolute;
   font-weight: 900;
   width: 1200px;
   left: 0px;
@@ -236,9 +235,6 @@ nav .portfolio:focus {
 .container .title {
   color: white;
   font-size: 44px;
-  width: 696px;
-  top: 280px;
-  left: 452px;
   text-align: center;
   line-height: 136%;
   letter-spacing: 0.06em;
@@ -246,8 +242,7 @@ nav .portfolio:focus {
   display: inline;
 }
 
-.section .but {
-  position: absolute;
+.container .but {
   color: white;
   width: 200px;
   background: #2196f3;
@@ -261,10 +256,10 @@ nav .portfolio:focus {
 .section .but:hover {
   border-radius: 4px;
 }
-.container .we {
+.section .we {
   background-color: #f5f4fa;
 }
-.container .about{
+.section .about{
   background-color: #f5f4fa;
 
 }
@@ -276,7 +271,6 @@ main{
 .section   .but3,
 .section   .but4,
 .section   .but5 {
-  position: absolute;
   font-family: "Roboto", sans-serif;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -325,7 +319,6 @@ main{
   line-height: 187%;
 }
 .container .list-images{
-  position: absolute;
 }
 .section  .lorem, 
 .section  .list-buttons,
@@ -334,7 +327,6 @@ main{
 .section  .list-images,
 .section  .list-images{
   list-style: none;
-  position: absolute;
 }
 
 .section .but1:hover,
@@ -351,7 +343,6 @@ main{
   cursor: pointer;
 }
  .section .text {
-  position: absolute;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -360,7 +351,6 @@ main{
   list-style: none;
 }
 .section .text11 {
-  position: absolute;
   width: 270px;
   left: 215px;
   top: 800px;
@@ -372,7 +362,6 @@ main{
   color: #757575;
 }
 .section .text22 {
-  position: absolute;
   width: 270px;
   left: 515px;
   top: 800px;
@@ -384,7 +373,6 @@ main{
   color: #757575;
 }
 .section .text33 {
-  position: absolute;
   width: 270px;
   left: 815px;
   top: 800px;
@@ -396,7 +384,6 @@ main{
   color: #757575;
 }
 .section .text44 {
-  position: absolute;
   width: 270px;
   left: 1115px;
   top: 800px;
@@ -408,7 +395,6 @@ main{
   color: #757575;
 }
 .section .text1 {
-  position: absolute;
   left: 215px;
   width: 270px;
   top: 774px;
@@ -416,7 +402,6 @@ main{
   letter-spacing: 0.03em;
 }
 .section .text2 {
-  position: absolute;
   left: 515px;
   width: 270px;
   top: 774px;
@@ -424,7 +409,6 @@ main{
   letter-spacing: 0.03em;
 }
 .section .text3 {
-  position: absolute;
   left: 815px;
   width: 270px;
   top: 774px;
@@ -432,7 +416,6 @@ main{
   letter-spacing: 0.03em;
 }
 .section .text4 {
-  position: absolute;
   left: 1115px;
   width: 270px;
   top: 774px;
@@ -440,7 +423,6 @@ main{
   letter-spacing: 0.03em;
 }
 .section > h1 {
-  position: absolute;
   font-family: "Roboto", sans-serif;
   width: 352px;
   left: 624px;
@@ -454,7 +436,6 @@ main{
   color: #212121;
 }
 .section > h2 {
-  position: absolute;
   width: 210px;
   left: 695px;
   top: 1543px;
@@ -513,7 +494,6 @@ main{
 .imagine7,
 .imagine8,
 .imagine9{
-  position: absolute;
   border-radius: 0px;
 }  
 .list-photos figcaption{
@@ -537,7 +517,6 @@ main{
 .imagineA,
 .imagineB,
 .imagineC{
-  position: absolute;
   border-radius: 0px;
 }
 
@@ -561,11 +540,9 @@ main{
 .imagination2,
 .imagination3,
 .imagination4 {
-  position: absolute;
   border-radius: 0px;
 }
 footer {
-  position: absolute;
   font-weight: 900;
   width: 1200px;
   left: 0px;
