@@ -1,0 +1,63 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-antena {
+  width: 0.9423828125em;
+}
+
+.icon-astronaut {
+  width: 0.9013671875em;
+}
+
+.icon-clock {
+  width: 0.9716796875em;
+}
+
+.icon-comp {
+  width: 1.2958984375em;
+}
+
+.icon-envelope {
+  width: 1.3330078125em;
+}
+
+.icon-Logo1 {
+  width: 1.7373046875em;
+}
+
+.icon-Logo2 {
+  width: 1.7373046875em;
+}
+
+.icon-Logo3 {
+  width: 1.7666015625em;
+}
+
+.icon-Logo4 {
+  width: 1.7666015625em;
+}
+
+.icon-Logo5 {
+  width: 1.7666015625em;
+}
+
+.icon-Logo6 {
+  width: 1.7666015625em;
+}
+
+.icon-telefon {
+  width: 0.625em;
+}
