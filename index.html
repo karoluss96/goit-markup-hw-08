@@ -30,7 +30,7 @@
     <li class="list-menu1">
       <div class="icon">
         <svg class="icons1">
-          <use href="/images/icons.svg#telefon">
+          <use href="./images/icons.svg#telefon">
           </use>
         </svg>
       </div>
@@ -38,7 +38,7 @@
     <li class="list-menu1">
       <div class="icon">
         <svg class="icons2">
-          <use href="/images/icons.svg#envelope">
+          <use href="./images/icons.svg#envelope">
           </use>
         </svg>
       </div>  
@@ -52,7 +52,7 @@
     <div class="main-container container">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto&display=swap" rel="stylesheet">
       <h1 class="title">Efektowna rozwiazania dla waszego biznesu</h1>
-      <button type="button" class="but">Zamów usługę</button>
+      <button type="button" class="but" data-modal-open>Zamów usługę</button>
     </div>
     </section>
     <section class="section sec2">
@@ -367,7 +367,7 @@
     <li>
       <div class="icon">
       <svg class="media">
-        <use href="/images/icons.svg#instagram">
+        <use href="./images/icons.svg#instagram">
         </use>
       </svg>
     </div>
@@ -375,7 +375,7 @@
     <li>
       <div class="icon">
       <svg class="media">
-        <use href="/images/icons.svg#twitter">
+        <use href="./images/icons.svg#twitter">
         </use>
       </svg>
     </div>
@@ -383,7 +383,7 @@
     <li>
       <div class="icon">
       <svg class="media">
-        <use href="/images/icons.svg#facebook">
+        <use href="./images/icons.svg#facebook">
         </use>
       </svg>
     </div>
@@ -391,7 +391,7 @@
     <li>
       <div class="icon">
       <svg class="media">
-        <use href="/images/icons.svg#linkedin">
+        <use href="./images/icons.svg#linkedin">
         </use>
       </svg>
     </div>
@@ -399,5 +399,11 @@
   </ul>
   </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-btn" data-modal-close>X</button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 </html>
