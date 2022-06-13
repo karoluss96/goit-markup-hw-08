@@ -4,11 +4,18 @@
   --text-grey: #757575;
   --text-black: #212121;
   --blue: #2196f3;
+  --white: #ffffff;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-family: "Roboto", "Raleway", sans-serif;
 }
 *{
   margin: 0px;
   padding: 0px;
+  border: 0;
+    line-height: 1.4em;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
 }
 *, 
 ::after, 
@@ -423,15 +430,25 @@ img {
 .list-photos{
   list-style-type: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: -30px;
-  position: relative;
-  transition: height 1s;
+ 
 }
 
-.list-photos:hover::after{
-  transition: height 1s;
+.list-photos li{
+  position: relative;
+    width: 370px;
+    height: 404px;
+    margin: 15px;
+    list-style-type: none;
+    background: var(--white);
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition);
+    transition-property: box-shadow;
 }
 
 
@@ -461,14 +478,43 @@ img {
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%);
   animation: cursorMoveOut 0.8s forwards;
 }
+.secret-text{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(33, 150, 243, 0.9);
+transform: translateY(100%);
+transition: var(--transition);
+transition-property: transform;
+}
+.secret-text>p{
+  text-align: left;
+    padding-top: 49px;
+    padding-left: 24px;
+    padding-right: 45px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
 .list-photos figcaption{
-  padding-top: 10px;
+  z-index: 1001;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: -6px;
+  list-style: none;
   border-right: 1px solid #EEEEEE;
-  border-left: 0px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
-  border-radius: 0px;
   letter-spacing: 0.03em;
-  position: absolute;
 }
 figcaption{
   padding-top: 20px;
