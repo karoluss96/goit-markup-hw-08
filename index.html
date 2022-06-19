@@ -403,6 +403,27 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="close-btn" data-modal-close>X</button>
+      <form class="form" name="sign-up" action="http://localhost:3000/posts" method="POST">
+        <h2>Zostaw swoje dane w formularzu poniżej</h2>
+        <label for="name">"Imię"
+          <input type="text" name="name" id="name" required>
+        </label>
+        <label for="phone">"Telefon"
+          <input type="tel" name="phone" id="phone" required>
+        </label>
+        <label for="email">"E-mail"
+          <input type="email" name="email" id="email" required>
+        </label>
+        <label>"Komentarz"<textarea name="content" placeholder="Wprowadź tekst"></textarea></label>
+        <div class="checkbox">
+          <input class="web" name="consent" value="consent" required>
+          <label for="consent" class="check-lex" id="consent">
+            "Oświadczam, iż akceptuję" <a href="#rules">Regulamin</a>
+            " i " <a href="#privacypolicy">Politykę Prywatności</a> ". "
+          </label>s
+        </div>
+        <button type="submit">Wyślij</button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
