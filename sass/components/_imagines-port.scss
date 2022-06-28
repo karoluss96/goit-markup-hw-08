@@ -1,0 +1,102 @@
+.list-photos{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    margin-left: -8px;
+    margin-bottom: -8px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+  }
+list-photos_li{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid var(--white);
+    margin-bottom: 30px;
+    background: var(--white);
+    border: 0px;
+    cursor: pointer;
+    &:hover{
+        transform: translateY(0);
+        transition: var(--transition);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    }
+    &:active,
+    &:focus{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+list-photos_li > img{
+    object-fit: cover;
+  }
+  .secret-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0.03em;
+    line-height: 1.56em;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: var(--transition);
+    transition-property: transform;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    }
+  .secret-text p{
+    text-align: left;
+    padding-top: 49px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  .underscore{
+    z-index: 1001;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    position: absolute;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-top: 20px;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    letter-spacing: 0.06em;
+    overflow: visible;
+  }  
+  .underscore h3{
+    width: 322px;
+    height: 36px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 4px;
+  }
+  .underscore p{
+    color: #757575;
+      width: 322px;
+      height: 30px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.03em;
+      margin: 0px;
+  }  

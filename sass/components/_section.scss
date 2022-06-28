@@ -1,0 +1,28 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+.sec2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.14;
+    justify-content: space-between
+} 
+.sec3{
+  background-color: var(--white);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.14;
+  justify-content: space-between
+}
+.sec4{
+    background-color: var(--grey);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    padding-top: 94px;
+  }
