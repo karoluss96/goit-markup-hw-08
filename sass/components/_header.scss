@@ -1,19 +1,45 @@
-.inner__link {
-    text-decoration: none;
+.header {
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+	padding: 25px 0;
+    &::after{
+      text-decoration: underline;
+    }
   }
-  .inner_nav a {
+  .header__nav-link {
     color: #212121;
     font-weight: 500;
     display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      border-top: 4px solid var(--blue);
+      border-bottom: 0cm;
+      border-radius: 2px;
+      width: 100%;
+      bottom: -62px;
+      left: 0;
+    }
   }
-  .list{
+  .header__nav-ul{
     margin-right: 46px;
     display: flex;
   }
-  .list__li{
+  .header__nav-li{
     display: flex;
    }
-  .list__slink{
+  .header__nav-link{
      text-decoration: none;
      display: flex;
      &:visited {
@@ -25,8 +51,8 @@
   }
   
  
-.list__tel,
-.list__mail{
+.header__list-tel,
+.header__list-mail{
     color: #757575;
     &:hover,
     &:focus 
@@ -35,25 +61,25 @@
         }
     }
   
-  .list-navs{
+  .header__list{
     margin-left: auto;
     margin-right: 12px;
     display: flex;
   }
   
-  list-navs_a{
+  header__list-a{
     text-decoration: none;
     color: var(--text-grey);
     margin-left: 50px;
     display: flex;
     &:hover,
- &:focus{
+    &:focus{
     color: #2196f3;
     border-radius: 2px;
   }
   }
 
-  .header_icon{
+  .header__list-icon{
     display: flex;
     padding: 20px 0;
     fill: #afb1b8;
@@ -61,7 +87,7 @@
     transition-property: fill, background-color;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header_icons1{
+  .header__list-smart{
     width: 16px;
     height: 12px;
     fill: #afb1b8;
@@ -69,7 +95,7 @@
     transition-property: fill, background-color;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header_icons2{
+  .header__list-env{
     width: 10px;
     height: 16px;
     fill: #afb1b8;
@@ -77,6 +103,7 @@
     transition-property: fill, background-color;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   
 
   

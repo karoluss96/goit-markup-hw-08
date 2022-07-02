@@ -1,4 +1,4 @@
-.clients{
+.sec5__list-clients{
     font-weight: 700;
       font-size: 36px;
       line-height: 42px;
@@ -7,7 +7,7 @@
       margin: 0px;
       margin-bottom: 50px;
   }
-  .list-clients{
+  .sec5__list-ul{
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -15,40 +15,4 @@
     margin-right: 20px;
     margin-left: 20px;
     padding-top: 20px;
-  }
-  .icon,
-  .corpos{
-    display: flex;
-    justify-content: center;
-    height: 120px;
-    padding: 25px 0;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    background-color: #212121;
-    fill: #afb1b8;
-    border-radius: 50%;
-    transition-property: fill, background-color;
-    transition: var(--transition);
-  }
-  .corpos {
-    width: 106px;
-    height: 60px;
-    &:hover,
-    &:focus
-    {
-    fill:var(--blue);
-    border: 1px solid var(--text-grey);
-    }
-  }
-  .icons{
-    width: 70px;
-    height: 70px;
-    &:hover{
-    background-color: #2196f3;
-  }
-}
-  .corpos:hover,
-  .corpos:focus{
-    fill:var(--blue);
-    border: 1px solid var(--text-grey);
   }

@@ -10,7 +10,7 @@
     line-height: 36px;
     letter-spacing: 0.03em;
   }
-list-photos_li{
+.list-photos__li{
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -30,10 +30,10 @@ list-photos_li{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 }
-list-photos_li > img{
+.list-photos__li > img{
     object-fit: cover;
   }
-  .secret-text{
+  .list-photos__li-secret{
     position: absolute;
     top: 0;
     left: 0;
@@ -48,7 +48,7 @@ list-photos_li > img{
     transition-timing-function: ease;
     transition-delay: 0s;
     }
-  .secret-text p{
+  .list-photos__li-p{
     text-align: left;
     padding-top: 49px;
     padding-left: 24px;
@@ -62,7 +62,7 @@ list-photos_li > img{
     letter-spacing: 0.03em;
     color: #ffffff;
   }
-  .underscore{
+  .list-photos__li-underscore{
     z-index: 1001;
     background-color: #fff;
     bottom: 0;
@@ -79,7 +79,7 @@ list-photos_li > img{
     letter-spacing: 0.06em;
     overflow: visible;
   }  
-  .underscore h3{
+  .list-photos__li-h3{
     width: 322px;
     height: 36px;
     font-weight: 700;
@@ -90,7 +90,7 @@ list-photos_li > img{
     padding: 0px;
     padding-bottom: 4px;
   }
-  .underscore p{
+  .list-photos__li-p2{
     color: #757575;
       width: 322px;
       height: 30px;
@@ -99,4 +99,28 @@ list-photos_li > img{
       line-height: 30px;
       letter-spacing: 0.03em;
       margin: 0px;
-  }  
+  } 
+  .list-photos__li-hide{
+    position: relative;
+    overflow: hidden;
+  } 
+  .list-photos__li-imagine{
+    position: relative;
+    width: 370px;
+    height: 404px;
+    margin: 0px;
+    overflow: hidden;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-between;
+    border-radius: 0px;
+    &:hover,
+    &:focus{
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%);
+    animation: cursorMoveOut 0.8s forwards;
+    }
+  }
+  .list-photos__li:hover .list-photos__li-secret{
+    transform: translateY(0);
+  transition: var(--transition);
+  }

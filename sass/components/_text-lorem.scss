@@ -1,13 +1,28 @@
-.lorem{
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-  }
-.lorem__text{
+.sec2,
+.lorem__list{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  letter-spacing: 0.03em;
+  align-items: center;
+}
+.lorem__list{
+  font-size: 14px;
+  line-height: 1.14;
+  justify-content: space-between
+}
+.lorem__item-text{
   font-weight: 700;
   text-transform: uppercase;
   display: block;
 }
-.lorem__text2{
+.lorem__item-text2{
   color: #757575;
+}
+lorem__item-icon{
+  color: var(--text-grey);
+  &:hover,
+  &:focus{
+    color: var(--blue);
+  }
 }

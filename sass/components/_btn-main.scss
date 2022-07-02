@@ -1,12 +1,15 @@
-.main-container{
-    color: #fff;
-    font-weight: 900;
-    font-size: 44px;
-    text-transform: uppercase;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    justify-content: space-between;
-    padding-top: 75px;
+.main__container-but{
+  color: var(--white);
+  background: #2196f3;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  border: none;
+  padding: 10px 41px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  align-items: center;
+  visibility: visible;
   }
   

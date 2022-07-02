@@ -8,11 +8,11 @@ footer {
   footer .container {
     padding-top: 60px;
   }
-  footer .end {
+  .footer__end {
     text-decoration-line: none;
     color: var(--blue);
   }
-  footer address {
+  .footer__adress{
     color: var(--white);
     font-size: 16px;
     font-style: normal;
@@ -22,10 +22,7 @@ footer {
     list-style-type: none;
     margin-bottom: 9px;
   }
-  footer .stat{
-    color: var(--white);
-  }
-  .join {
+  .footer__join {
     list-style: none;
     display: flex;
     align-items: center;
@@ -37,7 +34,7 @@ footer {
     transition-property: fill, background-color;
     transition: var(--transition);
   }
-  .join li{
+  .footer__join-li{
     justify-content: center;
     align-items: center;
     display: flex;
@@ -49,23 +46,22 @@ footer {
     cursor: pointer;
     margin-right: 10px;
     fill: var(--blue);
+    margin-left: 180px;
+    padding-top: 5px;
   }
-  .media{
+  .footer__join-media{
     width: 20px;
     height: 20px;
     align-items: center;
     fill: var(--white);
+    margin-left: 180px;
+    padding-top: 5px;
     &:hover,
     &:focus{
         background-color: var(--blue);
     }
   }
-  .foot-social{
-    margin-left: 180px;
-    padding-top: 5px;
-  }
-  
-  footer .come-in{
+  .footer__come{
     width: 113px;
     height: 16px;
     text-transform: uppercase;
@@ -74,8 +70,8 @@ footer {
     letter-spacing: 0.03em;
   }
  
-  footer .tel,
-  footer .mail  {
+  .footer__adress-tel,
+  .footer__adress-mail  {
     text-decoration-line: none;
     color: rgba(255, 255, 255, 0.6);
     opacity: 40%;
@@ -94,7 +90,7 @@ footer {
   font-weight: bold;
   letter-spacing: 0.03em;
   }
-  .footer_input{
+.footer__input{
       border: 1px solid var(--white);
       border-radius: 4px;
       width: 358px;
@@ -113,7 +109,7 @@ footer {
     background-color: var(--black);
   }
 }
-.footer_button{
+.footer__button{
     width: 200px;
     height: 50px;
     background: var(--blue);
@@ -130,7 +126,7 @@ footer {
     cursor: pointer;
     padding-bottom: 3px;
   }
-  .footer_svg{
+  .footer__svg{
     width: 24px;
     height: 24px;
   }

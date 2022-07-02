@@ -1,5 +1,7 @@
-.header__Web,
-.header__stat{
+header__link-web,
+header__link-stat,
+footer__web,
+footer__stat{
   font-family: "Raleway", "sans-serif";
   font-weight: 700;
   font-size: 26px;
@@ -7,9 +9,14 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.header__Web{
- color: #2196f3;
+header__link-web,
+footer__web{
+ color: var(--blue);
 }
-.header__stat{
-  color: #212121;
+header__link-stat
+{
+  color: var(--black);
+}
+.footer__stat{
+  color: var(--white);
 }

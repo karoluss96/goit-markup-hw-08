@@ -4,4 +4,24 @@
     transition-property: background-color;
     transition-duration: 250ms;
   }
-  
+  .container{
+    width: 1200px;
+    margin: 0 auto;
+    transition-property: background-color;
+    transition-duration: 250ms;
+  }
+  .main-container{
+    color: #fff;
+    font-weight: 900;
+    font-size: 44px;
+    text-transform: uppercase;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    justify-content: space-between;
+    padding-top: 75px;
+  }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
