@@ -1,9 +1,21 @@
 .container{
-    width: 1200px;
+    width: 480px;
     margin: 0 auto;
     transition-property: background-color;
     transition-duration: 250ms;
   }
+  @media screen and(min-width: 768px) {
+    .container {
+        width: 768px;
+        margin: 0 auto;
+    }
+}
+  @media screen and(min-width: 1200px) {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
   .main-container{
     color: #fff;
     font-weight: 900;

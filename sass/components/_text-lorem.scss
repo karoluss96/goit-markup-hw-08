@@ -26,3 +26,26 @@ lorem__item-icon{
     color: var(--blue);
   }
 }
+@media screen and (max-width: 767px) {
+  .lorem__list{
+    width: 450px;
+    flex-basis: calc(100% / 2);
+    margin-top: not(1n) 30px;
+  }
+}
+@media screen and (max-width: 768px){
+.lorem__list{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sec2,
+.lorem__list{
+  padding-bottom: 0;
+}
+  
+}
