@@ -11,12 +11,13 @@
   <meta name="Autor" content="Karol Śpila">
   <link rel="stylesheet" href="style-icons.css" />
   <link href="./css/main.min.css" rel="stylesheet" />
+<title>Web studio</title>
 </head>
 
 <body>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto&display=swap" rel="stylesheet">
   <header class = 'header'>
-    <div class="container">
+    <div class="container container--header-mobile">
     <a class ='header__link' href="index.html">
       <h1 class="header__link-h1">
         <span class = "header__link-web"> Web</span><span class="header__link-stat">Studio</span></h1></a>
@@ -47,6 +48,11 @@
   </li>
   </ul>
   </div>
+  <button class="btn-mobile-menu" type="button">
+    <svg class="btn-mobile-menu__icon js-open-menu" viewBox="0 0 24 16">
+      <use href="images/icons.svg#btn-mobile-menu"></use>
+    </svg>
+  </button>
   </header>
   <main>
     <section class="section">
@@ -128,7 +134,7 @@
       <source media="screen and (max-width: 768px)" srcset="images/img2@1x.png 1x"/>
       <source media="screen and (min-width: 768px)" srcset=" images/img2@1.5.png 1.5x"/>
       <source media="screen and (min-width: 1200px)" srcset="images/img2@2x.png 2x"/>
-      <img src="images/img2.png" alt="Projektowanie" width="370" height="294"/></picture>
+      <img src="images/img2.png" class="services__image" alt="Projektowanie" width="370" height="294"/></picture>
     <figcaption class="sec3__under">Aplikacje komputerowe</figcaption>
     </figure>
   </li>
@@ -136,7 +142,7 @@
       <source media="screen and (max-width: 768px)" srcset="images/img1@1x.png 1x"/>
       <source media="screen and (min-width: 768px)" srcset=" images/img1@1.5.png 1.5x"/>
       <source media="screen and (min-width: 1200px)" srcset="images/img1@2x.png 2x"/>
-      <img src="images/img1.png" alt="Mockaping" width="370" height="294"/></picture>
+      <img src="images/img1.png" class="services__image" alt="Mockaping" width="370" height="294"/></picture>
       <figcaption class="sec3__under">">Aplikacje mobilne</figcaption>
     </figure>
   </li>
@@ -144,7 +150,7 @@
       <source media="screen and (max-width: 768px)" srcset="images/img3@1x.png 1x"/>
       <source media="screen and (min-width: 768px)" srcset=" images/img3@1.5.png 1.5x"/>
       <source media="screen and (min-width: 1200px)" srcset="images/img3@2x.png 2x"/>
-      <img src="images/img3.png" alt="Ustalanie" width="370" height="294"/>    </picture>
+      <img src="images/img3.png" class="services__image" alt="Ustalanie" width="370" height="294"/>    </picture>
       <figcaption class="sec3__under">">rozwiązania graficzne</figcaption>
     </figure>
   </li>
@@ -155,14 +161,15 @@
   <div class="sec4"> 
       <h2 class = 'sec4__we'>nasz zespół</h2>
       <ul class="'sec4__images2">
-      <li class="sec4__images2-li">
+      <li class="sec4__images2-li sec4__images2-li--space-between">
         <figure class="sec4__images2-imagination"><picture>
         <source media="screen and (max-width: 768px)" srcset="images/img-3@1x.png 1x"/>
         <source media="screen and (min-width: 768px)" srcset=" images/img-3@1.5.png 1.5x"/>
         <source media="screen and (min-width: 1200px)" srcset="images/img-3@2x.png 2x"/>
         <img src="images/img-3.png" alt="John Doe" width="270" height="260"/></picture>
         <figcaption class="sec4__images2-fig">
-          <p><b>John Doe</b></p><p> Product Designer</p>
+          <h3 class="sec4__author">John Doe</h3>
+          <p class = "sec4__job"> Product Designer</p>
         <ul class="sec4__media">
         <li class="sec4__media-li">
           <a class="sec4__media-link" href="">
@@ -207,8 +214,8 @@
         <source media="screen and (min-width: 1200px)" srcset="images/img-2@2x.png 2x"/>
         <img src="images/img-2.png" alt="Fronted Developer" width="270" height="260"/></picture>
         <figcaption class="sec4__images2-fig">
-          <p><b>John Doe</b></p>
-          <p> Frontend Developer</p>
+          <h3 class="sec4__author">John Doe</h3>
+          <p class = "sec4__job"> Frontend Developer</p>
           <ul class="sec4__media">
             <li class="sec4__media-li">
               <a class="sec4__media-link" href="">
@@ -253,8 +260,8 @@
           <source media="screen and (min-width: 1200px)" srcset="images/img-1@2x.png 2x"/>
           <img src="images/img-1.png" alt="Marketing" width="270" height="260"/></picture>
         <figcaption class="sec4__images2-fig">
-          <p><b>John Doe</b></p>
-          <p> Marketing </p>
+          <h3 class="sec4__author">John Doe</h3>
+          <p class = "sec4__job"> Marketing </p>
           <ul class="sec4__media">
             <li class="sec4__media-li">
               <a class="sec4__media-link" href="">
@@ -299,7 +306,7 @@
           <source media="screen and (min-width: 1200px)" srcset="images/imgJD@2x.png 2x"/>
         <img src="images/imgJD.png" alt="UI Designer" width="270" height="260"/></picture>
         <figcaption class="sec4_images2-fig">
-          <p><b>John Doe</b></p>
+          <h3 class="sec4__author">John Doe</h3>
           <p> UI Designer</p>
           <ul class="sec4__media">
             <li class="sec4__media-li">
@@ -494,6 +501,7 @@
       </form>
     </div>
   </div>
-  <script src="./js/modal.js"></script>
+  <script defer src="js/mobile-menu.js"></script>
+  <script src="js/body-scroll-lock.js"></script>
 </body>
 </html>
