@@ -3,17 +3,38 @@
     margin: 0 auto;
     transition-property: background-color;
     transition-duration: 250ms;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    &--header-mobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
   }
   @media screen and(min-width: 768px) {
     .container {
-        width: 768px;
-        margin: 0 auto;
+      &--footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
     }
 }
   @media screen and(min-width: 1200px) {
     .container {
-        width: 1200px;
-        margin: 0 auto;
+      &--flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }       
+     &--footer {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+     }
     }
 }
   .main-container{

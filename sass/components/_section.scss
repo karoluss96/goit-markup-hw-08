@@ -1,6 +1,5 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 0;
   }
 .sec2{
     display: flex;
@@ -32,4 +31,8 @@
     line-height: 1.14;
     justify-content: space-between
   }
-
+  @media screen and (min-width: 1200px) {
+    .section {
+        padding: 94px 0;
+    }
+}
