@@ -154,5 +154,17 @@
 <symbol id="icon-send" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z" fill="white"/>
 </symbol>
+ <symbol id="btn-mobile-menu" viewBox="0 0 24 16">
+ <path d="M0 2.7V0h24v2.7H0Zm0 6.6h24V6.7H0v2.6ZM0 16h24v-2.7H0V16Z"/>
+ </symbol>
+
+ <symbol id="btn-mobile-menu-close" viewBox="0 0 19 19">
+ <path d="M18.6667 1.88L16.7867 0L9.33333 7.45334L1.88 0L0 1.88L7.45334 9.33333L0 16.7867L1.88 18.6667L9.33333 11.2133L16.7867 18.6667L18.6667 16.7867L11.2133 9.33333L18.6667 1.88Z" />
+ </symbol>
+
+ <symbol id="icon-vertical-line" viewBox="0 0 1 22">
+ <line x1="0.5" x2="0.5" y2="22" stroke="#212121" stroke-opacity="0.2"/>
+ </symbol>
+
 </defs>
 </svg>
