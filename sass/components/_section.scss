@@ -22,6 +22,7 @@
   fill: #afb1b8;
   transition-property: fill, background-color;
   transition: var(--transition);
+  display: block;
 }
 
 .ics{
@@ -38,11 +39,9 @@
   padding-bottom: 0;
   letter-spacing: 0.03em;
   align-items: center;
+  display: block;
 }
 
-.sec3{
- display: none;
-}
 
 .sec4{
   background-color: var(--grey);
@@ -54,16 +53,20 @@
 }
 
 @media screen and (min-width:768px){
+  .sec2{
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1200px){
   .ic{
     display: flex;
   }
   .sec2{
     display: flex;
   }
-}
-
-@media screen and (min-width: 1200px){
   .sec3{
+    display: flex;
     background-color: var(--white);
     font-size: 14px;
     line-height: 1.14;

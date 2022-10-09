@@ -8,15 +8,18 @@
   margin-bottom: 50px;
 
   &__list{
+    display: inline-block;
     list-style: none;
     justify-content: space-between;
     align-items: center;
     margin-right: 20px;
     margin-left: 20px;
     padding-top: 20px;
+    padding-bottom: 94px;
   }
 }
   .sec5__ul--a{
+    margin-bottom: 30px;
     width: 170px;
     height: 92px;
     border-radius: 4px;
@@ -51,11 +54,27 @@
   .sec5-clients{
    
     &__list{
+      display: inline-block;
+    }
+  }
+  
+  .sec5__ul--a{
+    width: 226px;
+    display: inline-block;
+  }  
+}
+
+@media screen and(min-width: 1200px) {
+  .sec5-clients{
+   
+    &__list{
+      
       display: flex;
     }
   }
   
   .sec5__ul--a{
+    width: 170px;
     display: flex;
   }  
 }
