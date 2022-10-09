@@ -15,7 +15,7 @@
 <body>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
   <div class="mobile-menu is-open" id="mobile-menu">
-    <button class="mobile-menu is-open" id="mobile-menu">
+    <button class="mobile-menu js-open-menu" id="mobile-menu">
       <svg viewBox="0 0 48 32">
       </svg>
     </button>
@@ -78,8 +78,8 @@
               </use>
             </svg>
           </div>
-      <span class ="sec2__lorem-title">Lorem ipsum</span>
-      <span class ="sec2__lorem-text">
+      <span class ="sec2__lorem--title">Lorem ipsum</span>
+      <span class ="sec2__lorem--text">
 		    Lorem ipsum dolor sit amet, 
           consectetur adipiscing elit.
            Nam vel arcu sem. Sed non sodales dui. 
@@ -92,8 +92,8 @@
             </use>
           </svg>
         </div>
-      <span class="sec2__lorem-title">Lorem ipsum</span>
-      <span class ="sec2__lorem-text2">
+      <span class="sec2__lorem--title">Lorem ipsum</span>
+      <span class ="sec2__lorem--text">
           Lorem ipsum dolor sit amet, 
           consectetur adipiscing elit.
           Nam vel arcu sem. Sed non sodales dui. 
@@ -106,8 +106,8 @@
             </use>
           </svg>
         </div>
-      <span class="sec2__lorem-title">Lorem ipsum</span>
-      <span class ="sec2__lorem-text2"> 
+      <span class="sec2__lorem--title">Lorem ipsum</span>
+      <span class ="sec2__lorem--text"> 
         Lorem ipsum dolor sit amet, 
           consectetur adipiscing elit.
           Nam vel arcu sem. Sed non sodales dui. 
@@ -120,8 +120,8 @@
             </use>
           </svg>
         </div>
-      <span class="sec2__lorem-title">Lorem ipsum</span>
-      <span class ="sec2__lorem-text2">
+      <span class="sec2__lorem--title">Lorem ipsum</span>
+      <span class ="sec2__lorem--text">
           Lorem ipsum dolor sit amet, 
           consectetur adipiscing elit.
           Nam vel arcu sem. Sed non sodales dui. 
@@ -154,11 +154,11 @@
   </section>
  <section class ="section sec4">
   <div class="container"> 
-      <h2 class = 'sec4__h2'>nasz zespół</h2>
-      <ul class="'sec4__list">
+      <h2 class = "sec4__h2">nasz zespół</h2>
+      <ul class="sec4__list">
       <li>
         <figure class="sec4__ul--figure"><picture>
-        <img src="images/img-3.png" alt="John Doe" width="270" height="260"/></picture>
+        <img srcset="images/imag_a1x.png 1x 480px images/imag_a2x.png 2x 480px images/imagTab_a1x.png 1x 768px images/imagTab_a2x.png 2x 768px" src="images/img-3.png" alt="John Doe" width="270" height="260"/></picture>
         <figcaption class="sec4__ul--figcaption">
           <h3 class="sec4__h3">John Doe</h3>
           <p class = "sec4__p"> Product Designer</p>
@@ -201,11 +201,11 @@
     </li>
       <li>
         <figure class="sec4__ul--figure"><picture>
-        <img src="images/img-2.png" alt="Fronted Developer" width="270" height="260"/></picture>
+        <img srcset="images/imag_b1x.png 1x 480px images/imag_b2x.png 2x 480px images/imagTab_b1x.png 1x 768px images/imagTab_b2x.png 2x 768px" src="images/img-2.png" alt="Fronted Developer" width="270" height="260"/></picture>
         <figcaption class="sec4__ul--figcaption">
           <h3 class="sec4__h3">John Doe</h3>
           <p class = "sec4__p"> Frontend Developer</p>
-          <ul class="sec4__media">
+          <ul class="sec4__ul">
             <li class="sec4__ul--li">
               <a class="sec4__ul--a" href="">
                 <svg class="sec4__ul--svg">
@@ -244,7 +244,7 @@
 		</li>
       <li>
         <figure class="sec4__ul--figure"><picture>
-          <img src="images/img-1.png" alt="Marketing" width="270" height="260"/></picture>
+          <img srcset="images/imag_c1x.png 1x 480px images/imag_c2x.png 2x 480px images/imagTab_c1x.png 1x 768px images/imagTab_c2x.png 2x 768px" src="images/img-1.png" alt="Marketing" width="270" height="260"/></picture>
         <figcaption class="sec4__ul--figcaption">
           <h3 class="sec4__h3">John Doe</h3>
           <p class = "sec4__p"> Marketing </p>
@@ -396,58 +396,63 @@
       </a>
     </h2>
     <address class="footer__adress">
-      <p class="footer__address--p"> m. Warszawa Aleje Jerozolimskie 21 </p>
-      <p class="footer__address--p"><a class="footer__mail" href="mailto:info@example.com">info@example.com</a></p>
-    <p class="footer__address--p"><a class="footer__tel" href="tel:+48111111111">+48 111 111 111</a></p>
+      <p class="footer__adress--p"> m. Warszawa Aleje Jerozolimskie 21 </p>
+      <p class="footer__adress--p"><a class="footer__mail" href="mailto:info@example.com">info@example.com</a></p>
+    <p class="footer__adress--p"><a class="footer__tel" href="tel:+48111111111">+48 111 111 111</a></p>
 </address>
-    <h2 class="footer__h2">Dołącz do nas</h2>
-    <ul class="footer__ul">
-    <li class="footer__li">
-      <a class="footer__li--a" href="#">
-        <svg class="footer__li--svg">
-        <use href="./images/icons.svg#icon-instagram">
-        </use>
-      </svg>
-    </a>
-    </li>
-    <li class="footer__li">
-      <a class="footer__li--a" href="#">
-        <svg class="footer__li--svg">
-        <use href="./images/icons.svg#icon-twitter">
-        </use>
-      </svg>
-    </a>
-    </li>
-    <li class="footer__li">
-      <a class="footer__li--a" href="#">
-        <svg class="footer__li--svg">
-        <use href="./images/icons.svg#icon-facebook">
-        </use>
-      </svg>
-    </a>
-    </li>
-    <li class="footer__li">
-      <a class="footer__li--a" href="#">
-        <svg class="footer__li--svg">
-        <use href="./images/icons.svg#icon-linkedin">
-        </use>
-      </svg>
-    </a>
-    </li>
-  </ul>
-  <div>
-    <p class="footer__div--p">Zapisz się do newslettera</p>
-    <div class="footer__div--newsletter">
-  <label class="footer__label--email" for="mail">
-    <input class="footer__input" type="email" name="mail" id="mail" placeholder="E-mail">
-    </label>
-    <button class="footer__button" type="submit">Zapisz się
-    <svg class="footer__button--svg">
-      <use href="./images/icons.svg#icon-send">
+</div>
+<div>
+  <h2 class="footer__h2">Dołącz do nas</h2>
+  <ul class="footer__ul">
+  <li class="footer__li">
+    <a class="footer__li--a" href="#">
+    <svg class="footer__li--svg">
+      <use href="./images/icons.svg#icon-instagram">
       </use>
-    </svg> 
-  </button>
+    </svg>
+  </a>
+  </li>
+  <li class="footer__li">
+    <a class="footer__li--a" href="#">
+    <svg class="footer__li--svg">
+      <use href="./images/icons.svg#icon-twitter">
+      </use>
+    </svg>
+  </a>
+  </li>
+  <li class="footer__li">
+    <a class="footer__li--a" href="#">
+    <svg class="footer__li--svg">
+      <use href="./images/icons.svg#icon-facebook">
+      </use>
+    </svg>
+  </a>
+  </li>
+  <li class="footer__li">
+    <a class="footer__li--a" href="#">
+    <svg class="footer__li--svg">
+      <use href="./images/icons.svg#icon-linkedin">
+      </use>
+    </svg>
+  </a>
+  </li>
+</ul>
+</div>
+<div>
+<p class="footer__div--p">Zapisz się do newslettera</p>
+<div class="footer__div--newsletter">
+<label class="footer__label--email" for="mail">
+  <input class="footer__input" type="email" name="mail" id="mail" placeholder="E-mail"/>
+</label>
+  <button class="footer__button" type="submit">Zapisz się
+  <svg class="footer__button--svg">
+    <use href="./images/icons.svg#icon-send">
+    </use>
+  </svg> 
+</button>
+</div>
   </div>
+</div>
   </footer>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
