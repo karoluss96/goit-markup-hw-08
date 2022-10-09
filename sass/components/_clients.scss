@@ -1,14 +1,13 @@
-.sec5__list-clients{
-    font-weight: 700;
-      font-size: 36px;
-      line-height: 42px;
-      text-align: center;
-      letter-spacing: 0.03em;
-      margin: 0px;
-      margin-bottom: 50px;
-  }
-  .sec5__list-ul{
-    display: flex;
+.sec5-clients{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--text-black);
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+
+  &__list{
     list-style: none;
     justify-content: space-between;
     align-items: center;
@@ -16,3 +15,47 @@
     margin-left: 20px;
     padding-top: 20px;
   }
+}
+  .sec5__ul--a{
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    fill:  #AFB1B8;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+  
+    &:focus{
+      border: 1px solid var(--blue);
+      fill: var(--blue);
+      color: var(--blue);
+      transition: var(--transition);
+    }
+  
+    &:hover{
+      border: 1px solid var(--blue);
+      fill: var(--blue);
+      color: var(--blue);
+      transition: var(--transition); 
+    }
+  }
+
+  .sec5__li--svg{
+    width: 106px;
+    height: 60px;
+  }
+
+
+@media screen and(min-width: 768px) {
+  .sec5-clients{
+   
+    &__list{
+      display: flex;
+    }
+  }
+  
+  .sec5__ul--a{
+    display: flex;
+  }  
+}
