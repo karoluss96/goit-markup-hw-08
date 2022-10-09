@@ -1,31 +1,56 @@
-.sec5__list-corpos,
-.sec5__list-icon{
-  display: flex;
-  justify-content: center;
-  height: 120px;
-  padding: 25px 0;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  background-color: #212121;
-  fill: #afb1b8;
-  border-radius: 50%;
-  transition-property: fill, background-color;
-  transition: var(--transition);
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
 }
-.sec5__list-corpos {
-  width: 106px;
-  height: 60px;
-  &:hover,
-  &:focus
-  {
-  fill:var(--blue);
-  border: 1px solid var(--text-grey);
-  }
+
+.icon-antena {
+  width: 0.9423828125em;
+  background-image: url('../images/antena.svg');
 }
-.sec5__list-icon{
-  width: 70px;
-  height: 70px;
-  &:hover{
-    background-color: #2196f3;
-    }
+
+.icon-astronaut {
+  width: 0.9013671875em;
+}
+
+.icon-clock {
+  width: 0.9716796875em;
+}
+
+.icon-comp {
+  width: 1.2958984375em;
+}
+
+.icon-envelope {
+  width: 1.3330078125em;
+}
+
+.icon-Logo1 {
+  width: 1.7373046875em;
+}
+
+.icon-Logo2 {
+  width: 1.7373046875em;
+}
+
+.icon-Logo3 {
+  width: 1.7666015625em;
+}
+
+.icon-Logo4 {
+  width: 1.7666015625em;
+}
+
+.icon-Logo5 {
+  width: 1.7666015625em;
+}
+
+.icon-Logo6 {
+  width: 1.7666015625em;
+}
+
+.icon-telefon {
+  width: 0.625em;
 }
