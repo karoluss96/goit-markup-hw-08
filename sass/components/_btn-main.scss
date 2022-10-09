@@ -93,6 +93,9 @@
       padding-top: 118px;
       padding-bottom: 40px;
     }
+    &__main-container{
+      width: 768px;
+    }
   }
 }  
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
@@ -116,7 +119,7 @@
       padding-top: 200px;
       } 
       &__main-container{
-        max-width: 1601px;
+        width: 1200px;
       }
     }
 }  
