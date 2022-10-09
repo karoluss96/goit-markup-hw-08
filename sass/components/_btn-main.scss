@@ -88,6 +88,11 @@
     background-size: 768px 400px;
     background-repeat: no-repeat;
     background-position: center top;
+    height: 400px;
+    &__title{
+      padding-top: 118px;
+      padding-bottom: 40px;
+    }
   }
 }  
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
@@ -104,8 +109,10 @@
       background-size: 1600px 600px;
       background-repeat: no-repeat;
       background-position: center top;
+      height: 600px;
       flex-grow: 1;
       &__title{
+      padding-bottom: 30px;
       padding-top: 200px;
       } 
       &__main-container{
