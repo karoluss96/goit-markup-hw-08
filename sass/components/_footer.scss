@@ -1,32 +1,262 @@
-footer {
-    background-color: $black;
-    color: $white;
-    font-size: 16px;
-    font-style: normal;
-    line-height: 1.5;
-    padding: 60px 0;
-    &__end{
-      text-decoration-line: none;
-    color: $blue;
-    }
-    &__adress{
-      color: &white;
+@media screen and (min-width: 1200px)
+{
+  
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--black);
+
+  &__container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__web{
+    color: var(--blue);
+  }
+
+  &__stat{
+    color: var(--white);
+  }
+
+  &__end{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    line-height: 1.4;
+    text-decoration-line: none;
+  }
+
+  &__address{
+    padding-top: 20px;
+    color: var(--white);
     font-size: 16px;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    font-weight: 400;
     list-style-type: none;
     margin-bottom: 9px;
+    gap: 30px;
+    &--p{
+      padding-top: 8px;
+    }
+  }
+
+  &__ul{
+    list-style: none;
     display: flex;
-        flex-direction: column;
-        align-items: center;
-        &--margin-bottom:not(:last-child) {
-          margin-bottom: 8px;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    transition-property: fill, background-color;
+    transition: var(--transition);
+  }
+
+  &__li{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--white);
+
+    &:focus-within{
+      background-color: var(--blue);
+      transition: var(--transition);  
+    }
+
+    &:hover{
+      background-color: var(--blue);
+      transition: var(--transition);  
+    }
+
+    &--svg{
+      width: 20px;
+      height: 20px;
+      align-items: center;
+      fill: var(--white);
+
+      &:hover{
+        background-color: var(--blue);
+        transition: var(--transition);  
+      }
+
+      &:focus{
+        background-color: var(--blue);
+        transition: var(--transition);  
       }
     }
-    &__join{
-      list-style: none;
+
+    &--a{
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      padding-left: 12px;
+      border-radius: 50%;
+      fill: var(--white);
+
+      &:hover{
+        color: var(--white);
+        transition: var(--transition);
+        }
+
+      &:focus{
+        color: var(--white);
+        transition: var(--transition);
+      } 
+    }
+  }
+
+  &__h2{
+    padding-top: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    width: 122px;
+    height: 16px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    letter-spacing: 0.03em;
+    padding-bottom: 20px;
+    color: var(--white);
+  }
+
+  &__div--p{
+    padding-top: 12px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__div--newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__input{
+    width: 400px;
+    height: 50px;
+    margin-top:10px;
+    border: 1px solid var(--white);
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.15));
+    border-radius: 4px;
+    background-color: var(--black);
+    margin-top: 20px;
+    padding-left: 16px;
+    color: var(--white);
+
+    &:hover{
+      border: 1px solid var(--blue);
+      border-radius: 4px;
+      outline: none;
+      transition: var(--transition);
+      background-color: var(--black);  
+    }
+
+    &:focus{
+      border: 1px solid var(--blue);
+      border-radius: 4px;
+      outline: none;
+      transition: var(--transition);
+      background-color: var(--black);
+    }
+  }
+
+  &__label--email{
+    margin-bottom: 20px;
+    align-items: center; 
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    padding-right: 12px;
+  }
+
+  &__button{
+    width: 200px;
+    height: 50px;
+    background: var(--blue);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    letter-spacing: 0.06em;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+
+    &:hover{
+      box-shadow: 0px 4px 4px var(--blue); 
+    }
+
+    &:focus{
+      box-shadow: 0px 4px 4px var(--blue);
+    }
+
+    &--svg{
+      width: 24px;
+      height: 24px;
+      margin-left: 25px;
+
+      &:hover{
+        color: var(--text-black);
+        fill: var(--text-black);
+        transition: var(--transition);
+      }
+
+      &:focus{
+        color: var(--text-black);
+        fill: var(--text-black);
+        transition: var(--transition);
+      }
+    }
+  }
+  
+  &__mail,
+  &__tel{
+    font-size: 14px;
+    text-decoration-line: none;
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 40%;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  
+    &:hover{
+      text-decoration: underline;
+      color: var(--blue);
+      border-radius: 4px;
+      transition: var(--transition); 
+  }
+
+    &:focus{
+      text-decoration: underline;
+      color: var(--blue);
+      border-radius: 4px;
+      transition: var(--transition);
+    }
+  }
+  
+  &__join{
+    list-style: none;
     display: flex;
     align-items: center;
     margin-top: 16px;
@@ -36,9 +266,27 @@ footer {
     border-radius: 50%;
     transition-property: fill, background-color;
     transition: var(--transition);
+  }
+
+  &__adress{
+    color: &white;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    list-style-type: none;
+    margin-bottom: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--margin-bottom:not(:last-child) {
+        margin-bottom: 8px;
     }
-    &__join-li{
-      justify-content: center;
+  }
+  
+  &__join-li{
+    justify-content: center;
     align-items: center;
     display: flex;
     width: 44px;
@@ -51,92 +299,25 @@ footer {
     fill: var(--blue);
     margin-left: 180px;
     padding-top: 5px;
-    }
-    &__join-media{
-      width: 20px;
-      height: 20px;
-      align-items: center;
-      fill: var(--white);
-      margin-left: 180px;
-      padding-top: 5px;
-      &:hover,
-      &:focus{
-          background-color: var(--blue);
-      }
-    }
-    &__come{
-      width: 113px;
-      height: 16px;
-      text-transform: uppercase;
-      font-size: 14px;
-      font-family: 'Roboto';
-      letter-spacing: 0.03em;
-    }
-    &__adress-tel,
-    &__adress-mail{
-      text-decoration-line: none;
-    color: rgba(255, 255, 255, 0.6);
-    opacity: 40%;
+  }
+
+  &__join-media{
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    fill: var(--white);
+    margin-left: 180px;
+    padding-top: 5px;
     &:hover,
     &:focus{
-        color: #2196f3;
-    text-decoration: underline;
-    }
-    }
-    &__input{
-      border: 1px solid var(--white);
-      border-radius: 4px;
-      width: 358px;
-      height: 50px;
-      padding-left: 42px;
-      line-height: 1.15;
-      margin-bottom: 30px;
-      color: var(--black);
-      padding-left: 10px;
-      background-color: var(--black);
-    &:hover,
-    &:focus{
-    border: 1px solid var(--blue);
-    border-radius: 4px;
-    outline: none;
-    background-color: var(--black);
+        background-color: var(--blue);
       }
-    }
-    &__button{
-      width: 200px;
-      height: 50px;
-      background: var(--blue);
-      box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-      border-radius: 4px;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.87;
-      text-align: center;
-      letter-spacing: 0.06em;
-      color: #fff;
-      margin-bottom: 30px;
-      border: none;
-      cursor: pointer;
-      padding-bottom: 3px;
-    }
-    &__svg{
-      width: 24px;
-      height: 24px;
-    }
   }
-  footer .container {
-    padding-top: 60px;
-  }
+}
+
+
   
-  footer label{
-  margin-bottom: 20px;
-  align-items: center; 
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: 'Roboto';
-  font-weight: bold;
-  letter-spacing: 0.03em;
-  }
+
   @media screen and(min-width: 768px) {
     .footer {
       &__address {

@@ -1,40 +1,18 @@
-.sec2,
-.lorem__list{
-  display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  letter-spacing: 0.03em;
-  align-items: center;
-}
-.lorem__list{
+.sec2__lorem{
   font-size: 14px;
   line-height: 1.14;
   justify-content: space-between
 }
-.lorem__item-text{
-  font-weight: 700;
-  text-transform: uppercase;
-  display: block;
-}
-.lorem__item-text2{
-  color: #757575;
-}
-lorem__item-icon{
-  color: var(--text-grey);
-  &:hover,
-  &:focus{
-    color: var(--blue);
-  }
-}
+
 @media screen and (max-width: 767px) {
-  .lorem__list{
+  .sec2__lorem{
     width: 450px;
     flex-basis: calc(100% / 2);
     margin-top: not(1n) 30px;
   }
 }
-@media screen and (max-width: 768px){
-.lorem__list{
+@media screen and (min-width: 768px){
+.sec2__lorem{
   display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -44,8 +22,38 @@ lorem__item-icon{
 }
 @media screen and (min-width: 1200px) {
   .sec2,
-.lorem__list{
+.sec2__lorem{
   padding-bottom: 0;
+  } 
+
+
+.sec2__lorem{
+  background-color: var(--white);
+  display: flex;
+  gap:30px;
+  letter-spacing: 0.03em;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.14;
+  justify-content: space-between;
+  &-title{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: block;
+    text-align: left;
+    list-style: none;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+  &-text{
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-grey);
+    letter-spacing: 0.03em;
+    text-align: justify;
+  }
 }
-  
 }
