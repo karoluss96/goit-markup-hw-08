@@ -23,6 +23,12 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .mob-menu{
+    display: none;
+    &__icon{
+      display: none;
+    }
+  }
 }
 
 @media screen and(min-width: 1200px) {
@@ -36,6 +42,12 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
   } 
+  .mob-menu{
+    display: none;
+    &__icon{
+      display: none;
+    }
+  }
 } 
 
 /*.container{

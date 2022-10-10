@@ -1,0 +1,153 @@
+.btn-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;    
+    cursor: pointer;
+    color: #212121;
+    
+    &:hover,
+    &:active,
+    &:focus {
+        color: var(--blue);
+        transition:var(--transition);
+  
+    }
+  
+    &__icon {
+        width: 24px;
+        height: 16px;
+        fill: currentColor;
+    }
+}
+
+
+.mob-menu{
+    display: flex;
+
+    &__icon{
+      display: block;
+      color: var(--black);
+      &:focus,
+      &:hover{
+        color: var(--blue);
+        }
+
+    &__nav{
+        display: block;
+        font-size: large;
+        }
+    
+    &_list-nav{
+        display: block;
+        font-size: large;
+        }
+      
+    &__list-nav1{
+        display: none;
+        font-size: large;
+        }
+    
+    &__media{
+        display: block;
+        font-size: large;
+        }
+    
+    &__list-menu1{
+        display: block;
+        align-items: center;
+        justify-content: center;
+            
+        &:focus{
+            color: var(--blue);
+            transition: var(--transition);
+            }
+        
+        &:hover{
+            color: var(--blue);
+            transition: var(--transition);
+            }  
+        }
+
+    &__list-nav--a{
+        text-decoration: none;
+        display: flex;
+    }
+      
+    &__list-nav1{
+        list-style-type: none;
+        margin-left: auto;
+        margin-right: -10px;
+        display: block;
+        align-items:center;
+      
+        &--a{
+            text-decoration: none;
+            color: var(--text-grey);
+            display: block;
+          
+            &:hover{
+                color: var(--blue);
+                transition: var(--transition);
+                }
+      
+            &:focus{
+                color: var(--blue);
+                transition: var(--transition);
+                }
+            }
+        }           
+    }  
+}
+  
+  @media screen and(min-width: 768px) {
+    .mob-menu{
+      display: none;
+      &__icon{
+        display: none;
+      }
+      &__nav{
+        display: none;
+    }
+
+    &_list-nav{
+        display: none;
+    }
+  
+    &__list-nav1{
+        display: none;
+    }
+
+    &__media{
+        display: none;
+    }
+    }
+}
+  
+  @media screen and(min-width: 1200px) {
+    .mob-menu{
+      display: none;
+      &__icon{
+        display: none;
+      }
+      &__nav{
+        display: none;
+    }
+
+    &_list-nav{
+        display: none;
+    }
+  
+    &__list-nav1{
+        display: none;
+    }
+
+    &__media{
+        display: none;
+    }
+    }
+}   

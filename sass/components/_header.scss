@@ -1,29 +1,4 @@
-.btn-mobile-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: transparent;
-  width: 40px;
-  height: 40px;    
-  cursor: pointer;
-  color: #212121;
-  
-  &:hover,
-  &:active,
-  &:focus {
-      color: var(--blue);
-      transition:var(--transition);
 
-  }
-
-  &__icon {
-      width: 24px;
-      height: 16px;
-      fill: currentColor;
-  }
-}
   .header {
     font-weight: 500;
     font-size: 14px;

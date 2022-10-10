@@ -22,7 +22,7 @@ ol {
 body {
   background-color:var(--white);
   display: block;
-  color: #212121;
+  color: var(--text-black);
   font-family: "Roboto", "Raleway", sans-serif;
   margin: 0 auto;
 }
@@ -39,6 +39,9 @@ figcaption{
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
 }
 
 input{
@@ -59,11 +62,13 @@ footer {
     img {
         min-width: 64%;
         block-size: auto;
+        flex-basis: auto;
     }
 }
   @media screen and(min-width: 1200px) {
     img {
         min-width: 100%;
-        block-size:  auto;
+        flex-basis: auto;
+        block-size: auto;
     }
 }
