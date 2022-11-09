@@ -144,7 +144,7 @@
   }
   
   &__input{
-    width: 400px;
+    width: 300px;
     height: 50px;
     margin-top:10px;
     border: 1px solid var(--white);
@@ -183,6 +183,7 @@
   }
 
   &__button{
+    margin-top: 10px;
     width: 200px;
     height: 50px;
     background: var(--blue);
@@ -316,7 +317,10 @@
       }
       &__address {
         flex-basis: 50%;
-    } 
+      } 
+      &__input{
+        width: 400px;
+      } 
 
     &__join {
         flex-basis: 50%;
@@ -345,6 +349,7 @@
     }
 
     &__button{
+      margin-top: 0px;
       display: flex;
     } 
 
