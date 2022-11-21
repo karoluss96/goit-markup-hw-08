@@ -14,14 +14,8 @@
 
 <body>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
- 
- <button class="btn-mobile-menu" type="button">
-    <svg class="btn-mobile-menu__icon js-open-menu" viewBox="0 0 24 16" width="40" height="40">
-      <use href="images/icons.svg#btn-mobile-menu"></use>
-    </svg>
-  </button>
- 
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto&display=swap" rel="stylesheet">
+
   <header class = 'header'>
     <div class="container container--header-mobile">
     <a class ='header__link' href="index.html">
@@ -50,9 +44,62 @@
         +48 111 111 111</a>
       </li>
   </ul>
+  <button class="btn-mobile-menu" type="button" data-menu-open>
+    <svg class="btn-mobile-menu__icon js-open-menu" width="24" height="16">
+      <use href="images/icons.svg#btn-mobile-menu"></use>
+    </svg>
+  </button>
   </div>
-
+  <div class="mob-menu"data-menu>
+    <div class="menu-close ijs-menu-container is-open" id="mobile-menu">
+      <button type="button" class="menu-close js-close-menu" id="js-open-menu" aria-expanded="false"
+    aria-controls="menu-close"data-menu-close>
+        <svg class="menu-close__icon" viewBox="0 0 40 40">
+          <use href= "./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <nav>
+    <ul class="mob-menu__nav">
+      <li>
+      <a href="index.html" class = "header__nav--a active header__link">Agencja</a>
+    </li>
+    <li>
+      <a href="portfolio.html" class = "header__nav--a header__link">Portfolio</a>
+    </li>
+    <li>
+      <a href="contact.html" class = "header__nav--a header__link">Kontakt</a>
+    </li> 
+    </ul>
+   </nav>
+    <div>
+    <ul class="mob-menu__list-nav1">
+      <li class="mob-menu__list-menu1">
+	    <a class="mob-menu__list-nav--a mob-menu__mail" href="mailto:info@example.com">
+      info@devstudio.com</a>
+      <li class="mob-menu__list-menu1">
+        <a class="mob-menu__list-nav--a mob-menu__tel" href="tel:+48111111111">
+        +48 111 111 111</a>
+      </li>
+  </ul>
+ </div>
+  <div>
+    <a href="instagram.com" class="mob-menu__media">Instagram</a>
+    <a href="facebook.com" class="mob-menu__media">Facebook</a>
+    <a href="tweeter.com" class="mob-menu__media">Tweeter</a>
+    <a href="instagram.com" class="mob-menu__media">Instagram</a>
+  </div>
+  <button type="button" class="mobile-menu js-open-menu">
+  </button>
+    <div class="is-hidden" data-modal>
+      modal
+      <button data-modal-close>x</button>
+    </div>
+      <div class="mob-menu__hamb">
+    </div>
+  </div>
+</div>
   </header>
+
   <main>
 <section class="section sec1">
     <div class="sec1__main-container container">
@@ -64,10 +111,10 @@
   <section class="section sec2">
       <div class="container">
 	    <ul class="sec2__lorem">
-        <li class="sec2__lorem-li">
+        <li class="sec2__lorem--li">
           <div class="ic">
             <svg class="ics">
-              <use href="./images/icons.svg#icon-antena">
+              <use href="./images/icons.svg#icon-antenna">
               </use>
             </svg>
           </div>
@@ -78,7 +125,7 @@
            Nam vel arcu sem. Sed non sodales dui. 
            Interdum et malesuada</span>
 		   </li>
-       <li class="sec2__lorem-li">
+       <li class="sec2__lorem--li">
         <div class="ic">
           <svg class="ics">
             <use href="./images/icons.svg#icon-clock">
@@ -92,7 +139,7 @@
           Nam vel arcu sem. Sed non sodales dui. 
           Interdum et malesuada</span>
 		   </li>
-       <li class="sec2__lorem-li">
+       <li class="sec2__lorem--li">
         <div class="ic">
           <svg class="ics">
             <use href="./images/icons.svg#icon-diagram">
@@ -106,7 +153,7 @@
           Nam vel arcu sem. Sed non sodales dui. 
           Interdum et malesuada</span>
 	    </li>
-      <li class="sec2__lorem-li">
+      <li class="sec2__lorem--li">
         <div class="ic">
           <svg class="ics">
             <use href="./images/icons.svg#icon-astronaut">
@@ -200,7 +247,7 @@
           <p class = "sec4__p"> Frontend Developer</p>
           <ul class="sec4__ul">
             <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
+              <a class="sec4__ul--a" href="https://instagram.com">
                 <svg class="sec4__ul--svg">
                   <use href="./images/icons.svg#icon-instagram">
                   </use>
@@ -208,7 +255,7 @@
               </a>
             </li> 
             <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
+              <a class="sec4__ul--a" href="https://twitter.com">
                 <svg class="sec4__ul--svg">
                   <use href="./images/icons.svg#icon-twitter">
                   </use>
@@ -216,7 +263,7 @@
               </a>
             </li> 
             <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
+              <a class="sec4__ul--a" href="https://facebook.com">
                 <svg class="sec4__ul--svg">
                   <use href="./images/icons.svg#icon-facebook">
                   </use>
@@ -224,7 +271,7 @@
               </a>
             </li> 
             <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
+              <a class="sec4__ul--a" href="https://linkedin.com">
                 <svg class="sec4__ul--svg">
                   <use href="./images/icons.svg#icon-linkedin">
                   </use>
@@ -243,7 +290,7 @@
           <p class = "sec4__p"> Marketing </p>
           <ul class="sec4__ul">
             <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
+              <a class="sec4__ul--a" href="https://instagram.com">
                 <svg class="sec4__ul--svg">
                   <use href="./images/icons.svg#icon-instagram">
                   </use>
@@ -251,7 +298,7 @@
               </a>
             </li> 
             <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
+              <a class="sec4__ul--a" href="https://twitter.com">
                 <svg class="sec4__ul--svg">
                   <use href="./images/icons.svg#icon-twitter">
                   </use>
@@ -259,7 +306,7 @@
               </a>
             </li> 
             <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
+              <a class="sec4__ul--a" href="https://facebook.com">
                 <svg class="sec4__ul--svg">
                   <use href="./images/icons.svg#icon-facebook">
                   </use>
@@ -267,14 +314,14 @@
               </a>
             </li> 
             <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
+              <a class="sec4__ul--a" href="https://linkedin.com">
                 <svg class="sec4__ul--svg">
                   <use href="./images/icons.svg#icon-linkedin">
                   </use>
                 </svg>
               </a>
             </li> 
-            </ul>
+            </ul>  
         </figcaption>
 		</figure>
 		</li>
@@ -398,7 +445,8 @@
   <h2 class="footer__h2">Dołącz do nas</h2>
   <ul class="footer__ul">
   <li class="footer__li">
-    <a class="footer__li--a" href="#">
+    <a class="footer__li--a" target="_blank"
+    rel="noreferrer noopener" href="https://instagram.com">
     <svg class="footer__li--svg">
       <use href="./images/icons.svg#icon-instagram">
       </use>
@@ -406,7 +454,8 @@
   </a>
   </li>
   <li class="footer__li">
-    <a class="footer__li--a" href="#">
+    <a class="footer__li--a" target="_blank"
+    rel="noreferrer noopener" href="https://twitter.com">
     <svg class="footer__li--svg">
       <use href="./images/icons.svg#icon-twitter">
       </use>
@@ -414,7 +463,8 @@
   </a>
   </li>
   <li class="footer__li">
-    <a class="footer__li--a" href="#">
+    <a class="footer__li--a" target="_blank"
+    rel="noreferrer noopener" href="https://facebook.com">
     <svg class="footer__li--svg">
       <use href="./images/icons.svg#icon-facebook">
       </use>
@@ -422,7 +472,8 @@
   </a>
   </li>
   <li class="footer__li">
-    <a class="footer__li--a" href="#">
+    <a class="footer__li--a"  target="_blank"
+    rel="noreferrer noopener" href="https://linkedin.com">
     <svg class="footer__li--svg">
       <use href="./images/icons.svg#icon-linkedin">
       </use>
@@ -448,9 +499,9 @@
 </div>
   </footer>
 <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
+    <div class="modal" data-modal>
       <button type="button" class="modal__button" data-modal-close>X</button>
-      <form class="form" name="sign-up" method="POST">
+      <form class="form" name="sign-up" method="POST" autocomplete="on" novalidate>
         <h2 class="form__h2">Zostaw swoje dane w formularzu poniżej</h2>
         <div class="form__div">
         <label class="form__label" for="name">Imię
@@ -490,47 +541,7 @@
       </form>
     </div>
   </div>
-   <div class="mob-menu">
-    <div class="mobile-menu js-menu-container is-open" id="mobile-menu">
-      <button type="button" class="mobile-menu js-close-menu" id="js-open-menu" aria-expanded="false"
-    aria-controls="mobile-menu">
-        <svg class="mobile-menu__icon" viewBox="0 0 48 32">
-          <use href= "./images/mobile_menu.svg"></use>
-        </svg>
-      </button>
-    <div class="mob-menu__nav">
-      <a href="index.html" class = "header__nav--a active header__link">Agencja</a>
-      <a href="portfolio.html" class = "header__nav--a header__link">Portfolio</a>
-      <a href="contact.html" class = "header__nav--a header__link">Kontakt</a>
-    </div>
-    <div>
-    <ul class="mob-menu__list-nav1">
-      <li class="mob-menu__list-menu1">
-	    <a class="mob-menu__list-nav--a mob-menu__mail" href="mailto:info@example.com">
-      info@devstudio.com</a>
-      <li class="mob-menu__list-menu1">
-        <a class="mob-menu__list-nav--a mob-menu__tel" href="tel:+48111111111">
-        +48 111 111 111</a>
-      </li>
-  </ul>
-</div>
-  <div>
-    <a href="instagram.com" class="mob-menu__media">Instagram</a>
-    <a href="facebook.com" class="mob-menu__media">Facebook</a>
-    <a href="tweeter.com" class="mob-menu__media">Tweeter</a>
-    <a href="instagram.com" class="mob-menu__media">Instagram</a>
-  </div>
-  <button type="button" class="mobile-menu js-open-menu">
-  </button>
-    <div class="is-hidden" data-modal>
-      modal
-      <button data-modal-close>x</button>
-    </div>
-      <div class="mob-menu__hamb">
-    </div>
-  </div>
-</div>
   <script defer src="js/mobile-menu.js"></script>
-  <script src="js/body-scroll-lock.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 </html>
