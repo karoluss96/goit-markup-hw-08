@@ -1,30 +1,47 @@
 .sec4__h2{
-  height: 42px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   letter-spacing: 0.03em;
   color: var(--text-black);
-  margin: 0 auto;
-  margin-bottom: 50px;
-  padding-bottom: 50px;
-  padding-top: 94px;
-  line-height: 1.6;
+  margin-bottom: 30px;
+  line-height: 1.17;
   background-color: #f5f4fa;
   text-align: center;
-  padding-bottom: 50px;
+}
+
+.sec4__list{
+  background-color: #f5f4fa;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  &--li{
+    background-color: var(--white);
+    width: 450px;
+  }
 }
 
 .sec4__ul{
   display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 0px 32px;
+  margin-top: 16px;
+  list-style: none;
   gap: 10px;
+
+  &--li{
+    width: 44px;
+    height: 44px;
+  }
   
   &--figcaption{
-    padding: 30px 34px;
-    bottom: 0;
+    padding: 30px 0px;
   }
 
   &--figure{
+    margin-bottom: 20px;
     position: relative;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 0px 0px 4px 4px;
@@ -36,20 +53,19 @@
   }
 
   &--svg{
-    align-items: center;
-    justify-content: center;
+    margin: 12px 0px 0px 12px;
     width: 20px;
     height: 20px;
   }
 
   &--a{
-    width: 40px;
-    height: 40px;
+    display: block;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background-color: var(--white);
     fill: #AFB1B8;
-    align-items: center;
-    justify-content: center;
+    color: #afb1b8;
 
     &:hover{
       background-color: var(--blue);
@@ -67,7 +83,8 @@
 
 .sec4__h3{
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -76,23 +93,21 @@
   color: var(--text-grey);
   font-size: 16px;
   font-weight: normal;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
-  margin: 0 auto;
-  padding-bottom: 16px;
+  margin-top: 10px;
 }
 
-.sec4__list{
-  background-color: #f5f4fa;
-  padding-left: 0;
-  padding-bottom: 10px;
-  display: block;
-}
+
 
 @media screen and (min-width: 768px){
   .sec4__list{
     display: inline-block;
     justify-content: space-between;
+    &--li{
+      width: 354px;
+    }
   }
   .sec4__ul{
     justify-content: space-between;
@@ -114,8 +129,17 @@
 }
 @media screen and (min-width: 1200px){
 
+  .sec4_h2{
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.6;
+  }
+
   .sec4__list{
     display: flex;
+    &--li{
+      width: 270px;
+    }
   }
   .sec4__ul{
     &--a{
