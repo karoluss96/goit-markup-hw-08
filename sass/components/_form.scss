@@ -19,19 +19,22 @@
     transition-property: opacity, transform;
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
+    &.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
   }
   .modal{
     position: relative;
-  top: 50%;
-  left: 50%;
-  width: 320px;
-  min-height: 581px;
-  transform: translate(-50%, -50%);
-  background-color: var(--white);
-  padding: 40px;
-  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
-  border-radius: 4px;
-  opacity: 100%;
+    width: 320px;
+    min-height: 581px;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    padding: 40px;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 4px;
+    opacity: 100%;
 
   &__button{
     cursor: pointer;
@@ -100,7 +103,7 @@
     display: block;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--black);
