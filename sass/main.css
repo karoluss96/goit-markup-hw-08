@@ -925,11 +925,14 @@ footer {
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 }
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
 .modal {
   position: relative;
-  top: 50%;
-  left: 50%;
   width: 320px;
   min-height: 581px;
   transform: translate(-50%, -50%);
@@ -1005,7 +1008,7 @@ footer {
   display: block;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black);
