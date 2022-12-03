@@ -1,3 +1,6 @@
+.sec5{
+  padding-top: 60px;
+
 .sec5-clients{
   font-weight: 700;
   font-size: 28px;
@@ -14,7 +17,7 @@
     gap: 30px;
   }
 }
-  .sec5__ul--a{
+  &__ul--a{
 
     border-radius: 4px;
     border: 1px solid #AFB1B8;
@@ -40,7 +43,7 @@
     }
   }
 
-.sec5__li{
+&__li{
 
     height: 90px;
     transition: var(--transition);
@@ -58,7 +61,7 @@
       height: 60px;
     }
   }
-
+}
 
 @media screen and(min-width: 768px) {
   .sec5-clients{
