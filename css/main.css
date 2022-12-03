@@ -1814,13 +1814,13 @@ footer {
     gap: 30px;
   }
   .sec3__figure {
+    width: 370px;
     position: relative;
   }
   .sec3__under-photo {
     display: flex;
     position: absolute;
     height: 70px;
-    width: 100%;
     bottom: 0;
     left: 0;
     padding: 27px 0px;
