@@ -1,6 +1,6 @@
 .footer {
-
-  width: 100%;
+  text-align: center;
+  padding: 60px 0px;
   background-color: var(--black);
 
   &__container{
@@ -9,6 +9,13 @@
     margin: 0 auto;
     padding-top: 60px;
     justify-content: space-between;
+  }
+
+  &__main{
+    display: block;
+    margin: 0;
+    padding: 0px;
+    list-style: none;
   }
   
   &__web{
@@ -30,23 +37,24 @@
   }
 
   &__address{
-    padding-top: 20px;
+    margin-top: 20px;
     color: var(--white);
     font-size: 16px;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.03em;
     list-style-type: none;
-    margin-bottom: 9px;
     gap: 30px;
     &--p{
-      padding-top: 8px;
+      padding-top: 9px;
     }
   }
 
   &__ul{
     list-style: none;
+    justify-content: center;
     align-items: center;
+    padding: 0;
     margin-top: 20px;
     flex-wrap: wrap;
     gap: 10px;
@@ -58,7 +66,10 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    width: 44px;
+    height: 44px;
     gap: 10px;
+    margin-right: 10px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--white);
@@ -71,23 +82,6 @@
     &:hover{
       background-color: var(--blue);
       transition: var(--transition);  
-    }
-
-    &--svg{
-      width: 20px;
-      height: 20px;
-      align-items: center;
-      fill: var(--white);
-
-      &:hover{
-        background-color: var(--blue);
-        transition: var(--transition);  
-      }
-
-      &:focus{
-        background-color: var(--blue);
-        transition: var(--transition);  
-      }
     }
 
     &--a{
@@ -108,52 +102,81 @@
         transition: var(--transition);
       } 
     }
+
+    &--svg{
+      width: 20px;
+      height: 20px;
+      margin: 12px 0px 0px 12px;
+      align-items: center;
+      fill: var(--white);
+
+      &:hover{
+        background-color: var(--blue);
+        transition: var(--transition);  
+      }
+
+      &:focus{
+        background-color: var(--blue);
+        transition: var(--transition);  
+      }
+    }
+  }
+
+  &__social{
+    display: block;
+    margin-top: 60px;
+    text-align: center;
   }
 
   &__h2{
-    padding-top: 12px;
+    padding: 15px 20px 10px 0px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.4;
-    width: 122px;
-    height: 16px;
+    line-height: 1.14;
     text-transform: uppercase;
     font-family: 'Roboto';
     letter-spacing: 0.03em;
-    padding-bottom: 20px;
     color: var(--white);
   }
 
-  &__div--p{
-    padding-top: 12px;
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  &__send{
+    margin-top: 60px;
+    &--p{
+      padding-top: 15px;
+      padding-bottom: 10px;
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      line-height: 1.14;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    &--newsletter{
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
-  &__div--newsletter{
-    width: 450px;
-    height: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
-    justify-content: center;
-    align-items: center;
-  }
-  
   &__input{
-    width: 300px;
+    width: 100%;
     height: 50px;
-    margin-top:10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     border: 1px solid var(--white);
     filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.15));
     border-radius: 4px;
     background-color: var(--black);
-    margin-top: 20px;
-    padding-left: 16px;
+    padding: 13px 16px;
     color: var(--white);
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      color: rgba(255, 255, 255, 0.6);
+    }
 
     &:hover{
       border: 1px solid var(--blue);
@@ -183,21 +206,25 @@
   }
 
   &__button{
-    margin-top: 10px;
-    width: 200px;
-    height: 50px;
-    background: var(--blue);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
+    display: inline-flex;
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    padding: 8px 30px;
+    background: var(--blue);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
     letter-spacing: 0.06em;
-    color: #fff;
-    border: 0px;
+    color: var(--white);
+    border: none;
     cursor: pointer;
+    min-height: 40px;
 
     &:hover{
       box-shadow: 0px 4px 4px var(--blue); 
@@ -205,6 +232,14 @@
 
     &:focus{
       box-shadow: 0px 4px 4px var(--blue);
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 20px;
+      margin-left: 10px;
     }
 
     &--svg{
@@ -228,6 +263,7 @@
   
   &__mail,
   &__tel{
+    font-style: normal;
     font-size: 14px;
     text-decoration-line: none;
     color: rgba(255, 255, 255, 0.6);
@@ -249,19 +285,6 @@
       transition: var(--transition);
     }
   }
-  
-  &__join{
-    list-style: none;
-    align-items: center;
-    margin-top: 16px;
-    padding: 25px;
-    background-color: var(--black);
-    fill: var(--blue);
-    border-radius: 50%;
-    transition-property: fill, background-color;
-    transition: var(--transition);
-  }
-
   &__adress{
     color: var(--white);
     font-size: 16px;
@@ -277,59 +300,42 @@
         margin-bottom: 8px;
     }
   }
-  
-  &__join-li{
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    padding: 0px;
-    background-color: var(--black);
-    border-radius: 50%;
-    cursor: pointer;
-    margin-right: 10px;
-    fill: var(--blue);
-    margin-left: 180px;
-    padding-top: 5px;
-  }
-
-  &__join-media{
-    width: 20px;
-    height: 20px;
-    align-items: center;
-    fill: var(--white);
-    margin-left: 180px;
-    padding-top: 5px;
-    &:hover,
-    &:focus{
-        background-color: var(--blue);
-      }
-  }
 }
-
-
 
   @media screen and(min-width: 768px) {
     .footer {
+
       &__container{
         width: 768px;
         display: inline-block;
       }
+
+      &__main{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px 165px;
+      }
+
       &__address {
         flex-basis: 50%;
       } 
-      &__input{
-        width: 400px;
-      } 
 
-    &__join {
-        flex-basis: 50%;
-        &-li{
-          display: flex;
-        }
+      &__h2{
+        padding-bottom: 10px;
+      }
+
+      &__social{
+        margin-top: 0px;
+      }
+
+      &__send{
+        margin-top: 0px;
+        padding: 0;
       }
     }
   }
+
   @media screen and(min-width: 1200px) {
     .footer {
       display: flex;
@@ -339,51 +345,47 @@
         display: flex;
       }
 
+      &__main{
+        text-align: left;
+        gap: 70px;
+      }
+
       &__address {
         flex-basis: auto;
         align-items: flex-start;
         display: flex;
-        &--margin-right {
-            margin-right: 70px;
-        }
-    }
-
-    &__button{
-      margin-top: 0px;
-      display: flex;
-    } 
-
-    &__li{
-      display: flex;
-      &--a{
-        display: flex;
       }
-    }
 
-    &__text {
-        line-height: 2;
+      &__h2{
         text-align: left;
       }
-
-    &__ul{
-      display: flex;
-    }
-
-    &__join {
-        flex-basis: auto;
-        align-items: flex-start;          
+    
+      &__button{
+        margin-top: 20px;
         display: flex;
-        &--padding-top {
-            padding-top: 12px;
-        }
-        
-        &--margin-right {
-            margin-right: 78px;
-        }
+      } 
+
+      &__text {
+          line-height: 2;
+          text-align: left;
       }
 
-    &__div--newsletter{
-      display: flex;
-    }
+      &__ul{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__send{
+        margin-left: 25px;
+      }
+
+      &__input{
+        width: 400px;
+        margin-right: 12px;
+      } 
+
+      &__send--newsletter{
+        display: flex;
+      }
   }
 }

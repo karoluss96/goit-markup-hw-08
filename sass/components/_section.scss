@@ -1,12 +1,13 @@
 .section {
- 
+  margin-top: 10px;
   &__port1{
-    padding-top: 94px;
-    padding-bottom: 56px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   &__port2{
-    padding-bottom: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -34,6 +35,7 @@
 }
 
 .sec2{
+  margin-top: 20px;
   font-size: 14px;
   line-height: 1.14;
   justify-content: space-between;
@@ -62,6 +64,7 @@
   padding-bottom: 60px;
 }
 .sec5{
+  margin-top: 30px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -74,12 +77,24 @@
     display: inline-block;
     width: 350px;
   }
+  .section {
+ 
+    &__port1{
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  
+    &__port2{
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px){
   .ic{
     display: flex;
-    width: 270px;
+    width: 100%;
   }
   .sec2{
     display: flex;
@@ -98,6 +113,19 @@
   .sec5{
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+
+  .section {
+ 
+    &__port1{
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  
+    &__port2{
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
 }
 
