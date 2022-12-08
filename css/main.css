@@ -302,7 +302,7 @@ footer {
   align-items: center;
   text-transform: uppercase;
   font-size: 18px;
-  font-weight: 900px;
+  font-weight: 900;
   font-style: normal;
   font-weight: bold;
   padding-top: 118px;
@@ -2106,7 +2106,7 @@ footer {
 @media screen and (max-width: 767px) {
   .sec2__lorem {
     flex-basis: 50%;
-    margin-top: false 30px;
+    margin-top: 30px;
   }
   .sec2__lorem--li {
     width: 450px;
