@@ -80,8 +80,8 @@
 }
 .sec4__ul--svg {
   margin: 12px 0px 0px 12px;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
 }
 .sec4__ul--a {
   display: block;
@@ -177,8 +177,8 @@
     height: 428px;
   }
   .sec4__ul--svg {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
   }
 }
 * {
@@ -522,7 +522,6 @@ footer {
   border-color: var(--blue);
 }
 .sec5__li--svg {
-  fill: var(--white);
   width: 106px;
   height: 60px;
 }
@@ -657,7 +656,7 @@ footer {
   width: 44px;
   height: 44px;
   align-items: center;
-  padding-left: 12px;
+  padding-right: 12px;
   border-radius: 50%;
   fill: var(--white);
 }
