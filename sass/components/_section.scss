@@ -1,5 +1,6 @@
 .section {
-  margin-top: 10px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   &__port1{
     padding-top: 15px;
     padding-bottom: 15px;
@@ -35,14 +36,12 @@
 }
 
 .sec2{
-  margin-top: 20px;
   font-size: 14px;
   line-height: 1.14;
   justify-content: space-between;
   background-color: var(--white);
   gap:30px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 0;
   letter-spacing: 0.03em;
   align-items: center;
   display: block;
@@ -64,7 +63,6 @@
   padding-bottom: 60px;
 }
 .sec5{
-  margin-top: 30px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
