@@ -14,48 +14,94 @@
 
 <body>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
-  <button type="button" class="mobile-menu js-open-menu">
-  </button>
- <button class="btn-mobile-menu" type="button">
-    <svg class="btn-mobile-menu__icon js-open-menu" viewBox="0 0 24 16" width="40" height="40">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto&display=swap" rel="stylesheet">
+
+  <header class = 'header'>
+    <div class="container container--header-mobile">
+    <a class ='header__link' href="index.html">
+      <span class = "header__web"> Web</span><span class="header__stat">Studio</span></a>
+    <nav class="header__nav">
+	<ul class="header__list-nav">
+        <li class="header__list-menu"><a class="header__nav--a header__link" href="index.html">Agencja</a></li>
+        <li class="header__list-menu"><a class="header__nav--a active header__link" href="portfolio.html">Portfolio</a></li>
+        <li class="header__list-menu"><a class="header__nav--a header__link " href="/contakt">Kontakt</a></li>
+		</ul>
+    </nav>
+    <ul class="header__list-nav1">
+      <li class="header__list-menu1">
+	    <a class="header__list-nav--a header__mail" href="mailto:info@example.com">
+        <svg class="header__ics" width="16px" height="12px">
+          <use href="./images/icons.svg#icon-envelope">
+          </use>
+        </svg>  
+      info@devstudio.com</a>
+      <li class="header__list-menu1">
+        <a class="header__list-nav--a header__tel" href="tel:+48111111111">
+          <svg class="header__ics" width="10px" height="16px">
+            <use href="./images/icons.svg#icon-smartphone">
+            </use>
+          </svg>
+        +48 111 111 111</a>
+      </li>
+  </ul>
+  <button class="btn-mobile-menu" type="button" data-menu-open>
+    <svg class="btn-mobile-menu__icon js-open-menu" width="24" height="16">
       <use href="images/icons.svg#btn-mobile-menu"></use>
     </svg>
   </button>
-
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto&display=swap" rel="stylesheet">
-   <header class = "header">
-    <div class="container">
-      <a class="header__link" href="index.html">
-        <span class = "header__web"> Web</span><span class="header__stat">Studio</span></a>
-      <nav>
-      <ul class="header__list-nav">
-        <li class="header__list-menu"><a class="header__nav--a header__link" href="index.html">Agencja</a></li>
-        <li class="header__list-menu"><a class="header__nav--a active header__link" href="portfolio.html">Portfolio</a></li>
-        <li class="header__list-menu"><a class="header__nav--a header__link" href="/contakt">Kontakt</a></li>
-      </ul>
-      </nav>
-      <ul class="header__list-nav1">
-        <li class="header__list-menu1">
-          <a class="header__list-nav1--a header__mail" href="mailto:info@example.com">
-              <svg class="header__ics" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-envelope">
-                </use>
-              </svg>  
-          info@devstudio.com</a>
-          <li class="header__list-menu1">
-            <a class="header__list-nav1--a header__tel" href="tel:+48111111111">
-                <svg class="header__ics" width="10px" height="16px">
-                  <use href="./images/icons.svg#icon-smartphone">
-                  </use>
-                </svg>
-            +48 111 111 111</a>
-        </li>
-    </ul>
   </div>
+  <div class="mob-menu" data-menu>
+    <div class="menu-close js-menu-container is-open" id="mobile-menu">
+      <button type="button" class="menu-close js-close-menu" id="js-open-menu" aria-expanded="false"
+    aria-controls="menu-close" data-menu-close>
+        <svg class="menu-close__icon" viewBox="0 0 40 40">
+          <use href= "./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <nav>
+    <ul class="mob-menu__nav">
+      <li>
+      <a href="index.html" class = "header__nav--a active header__link">Agencja</a>
+    </li>
+    <li>
+      <a href="portfolio.html" class = "header__nav--a header__link">Portfolio</a>
+    </li>
+    <li>
+      <a href="contact.html" class = "header__nav--a header__link">Kontakt</a>
+    </li> 
+    </ul>
+   </nav>
+    <div>
+    <ul class="mob-menu__list-nav1">
+      <li class="mob-menu__list-menu1">
+	    <a class="mob-menu__list-nav--a mob-menu__mail" href="mailto:info@example.com">
+      info@devstudio.com</a>
+      <li class="mob-menu__list-menu1">
+        <a class="mob-menu__list-nav--a mob-menu__tel" href="tel:+48111111111">
+        +48 111 111 111</a>
+      </li>
+  </ul>
+ </div>
+  <div>
+    <a href="instagram.com" class="mob-menu__media">Instagram</a>
+    <a href="facebook.com" class="mob-menu__media">Facebook</a>
+    <a href="tweeter.com" class="mob-menu__media">Tweeter</a>
+    <a href="instagram.com" class="mob-menu__media">Instagram</a>
+  </div>
+  <button type="button" class="mobile-menu js-open-menu">
+  </button>
+    <div class="is-hidden" data-modal>
+      modal
+      <button data-modal-close>x</button>
+    </div>
+      <div class="mob-menu__hamb">
+    </div>
+  </div>
+</div>
+</header>
   
-  </header>
-  <main>
-    <section class="section_port1">
+<main>
+    <section class="section__port1">
     <div class="container">
     <ul class="port1__ul">
       <li><button type="button" class="port1__ul--button">Wszystkie</button></li>
@@ -66,7 +112,7 @@
     </ul>
   </div>
   </section>
-   <section class="section_port2">
+   <section class="section__port2">
     <div class="container">
     <ul class="port2__ul">  
       <li class="port2__li">
@@ -271,46 +317,7 @@
   </div>
 </div>
   </footer>
-  <div class="mob-menu">
-    <div class="mobile-menu js-menu-container is-open" id="mobile-menu">
-      <button type="button" class="mobile-menu js-close-menu" id="js-open-menu" aria-expanded="false"
-    aria-controls="mobile-menu">
-        <svg class="mobile-menu__icon" viewBox="0 0 48 32">
-          <use href= "./images/mobile_menu.svg"></use>
-        </svg>
-      </button>
-    <div class="mob-menu__navigation">
-      <a href="index.html" class = "mob-menu__nav--a  header__link">Agencja</a>
-      <a href="portfolio.html" class = "mob-menu__nav--a active header__link">Portfolio</a>
-      <a href="contact.html" class = "mob-menu__nav--a header__link">Kontakt</a>
-    </div>
-    <div>
-    <ul class="mob-menu__list-nav1">
-      <li class="mob-menu__list-menu1">
-	    <a class="mob-menu__list-nav--a mob-menu__mail" href="mailto:info@example.com">
-      info@devstudio.com</a>
-      <li class="mob-menu__list-menu1">
-        <a class="mob-menu__list-nav--a mob-menu__tel" href="tel:+48111111111">
-        +48 111 111 111</a>
-      </li>
-  </ul>
-</div>
-  <div>
-    <a href="instagram.com" class="mob-menu__media">Instagram</a>
-    <a href="facebook.com" class="mob-menu__media">Facebook</a>
-    <a href="tweeter.com" class="mob-menu__media">Tweeter</a>
-    <a href="instagram.com" class="mob-menu__media">Instagram</a>
-  </div>
-  <button type="button" class="mobile-menu js-open-menu">
-  </button>
-    <div class="is-hidden" data-modal>
-      modal
-      <button data-modal-close>x</button>
-    </div>
-      <div class="mob-menu__hamb">
-    </div>
-  </div>
-</div>
+ 
 <script src="./js/mobile-menu.js"></script>
  </body>
 </html>
