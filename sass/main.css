@@ -479,11 +479,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding: 0 15px;
-  }
-  .footer__container {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    padding: 15px 15px;
   }
   .mob-menu {
     display: none;
@@ -758,7 +754,6 @@ footer {
   padding-right: 12px;
 }
 .footer__button {
-  display: inline-flex;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -775,7 +770,6 @@ footer {
   color: var(--white);
   border: none;
   cursor: pointer;
-  min-height: 40px;
 }
 .footer__button:hover {
   box-shadow: 0px 4px 4px var(--blue);
@@ -849,9 +843,8 @@ footer {
   }
   .footer__main {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
   }
   .footer__address {
     flex-basis: 50%;
@@ -874,6 +867,8 @@ footer {
   .footer__container {
     width: 1200px;
     display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
   }
   .footer__main {
     text-align: left;
@@ -895,6 +890,7 @@ footer {
   }
   .footer__ul {
     display: flex;
+    margin-top: 10px;
     justify-content: space-between;
   }
   .footer__send {
@@ -1606,7 +1602,7 @@ footer {
     border-bottom: 0cm;
     border-radius: 2px;
     width: 100%;
-    bottom: -31px;
+    bottom: -21px;
     left: 0;
     background-color: var(--blue);
   }
@@ -1811,7 +1807,7 @@ footer {
   fill: currentColor;
 }
 
-.mob-menu {
+.mobile-menu {
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -1822,63 +1818,63 @@ footer {
   padding: 15px 10px 48px 40px;
   z-index: 999;
 }
-.mob-menu__icon {
+.mobile-menu__icon {
   display: block;
   color: var(--black);
 }
-.mob-menu__icon:focus, .mob-menu__icon:hover {
+.mobile-menu__icon:focus, .mobile-menu__icon:hover {
   color: var(--blue);
 }
-.mob-menu__icon__nav {
+.mobile-menu__icon__nav {
   display: block;
   font-size: large;
 }
-.mob-menu__icon_list-nav {
+.mobile-menu__icon_list-nav {
   display: block;
   font-size: large;
 }
-.mob-menu__icon__list-nav1 {
+.mobile-menu__icon__list-nav1 {
   display: none;
   font-size: large;
 }
-.mob-menu__icon__media {
+.mobile-menu__icon__media {
   display: block;
   font-size: large;
 }
-.mob-menu__icon__list-menu1 {
+.mobile-menu__icon__list-menu1 {
   display: block;
   align-items: center;
   justify-content: center;
 }
-.mob-menu__icon__list-menu1:focus {
+.mobile-menu__icon__list-menu1:focus {
   color: var(--blue);
   transition: var(--transition);
 }
-.mob-menu__icon__list-menu1:hover {
+.mobile-menu__icon__list-menu1:hover {
   color: var(--blue);
   transition: var(--transition);
 }
-.mob-menu__icon__list-nav--a {
+.mobile-menu__icon__list-nav--a {
   text-decoration: none;
   display: flex;
 }
-.mob-menu__icon__list-nav1 {
+.mobile-menu__icon__list-nav1 {
   list-style-type: none;
   margin-left: auto;
   margin-right: -10px;
   display: block;
   align-items: center;
 }
-.mob-menu__icon__list-nav1--a {
+.mobile-menu__icon__list-nav1--a {
   text-decoration: none;
   color: var(--text-grey);
   display: block;
 }
-.mob-menu__icon__list-nav1--a:hover {
+.mobile-menu__icon__list-nav1--a:hover {
   color: var(--blue);
   transition: var(--transition);
 }
-.mob-menu__icon__list-nav1--a:focus {
+.mobile-menu__icon__list-nav1--a:focus {
   color: var(--blue);
   transition: var(--transition);
 }
@@ -1931,24 +1927,30 @@ footer {
   .menu-close__icon {
     display: none;
   }
+  .btn-mobile-menu {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .mob-menu {
+  .mobile-menu {
     display: none;
   }
-  .mob-menu__icon {
+  .mobile-menu__icon {
     display: none;
   }
-  .mob-menu__nav {
+  .mobile-menu__nav {
     display: none;
   }
-  .mob-menu_list-nav {
+  .mobile-menu_list-nav {
     display: none;
   }
-  .mob-menu__list-nav1 {
+  .mobile-menu__list-nav1 {
     display: none;
   }
-  .mob-menu__media {
+  .mobile-menu__media {
+    display: none;
+  }
+  .btn-mobile-menu {
     display: none;
   }
   .menu-close {
@@ -2071,11 +2073,10 @@ footer {
   }
   .section__port1 {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 56px;
   }
   .section__port2 {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 50px;
   }
 }
 .sec2__lorem {
