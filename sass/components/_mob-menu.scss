@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     border: none;
+    margin-left: auto;
     background-color: transparent;
     width: 40px;
     height: 40px;    
@@ -26,8 +27,16 @@
 }
 
 
-.mob-menu{
+.mobile-menu{
     display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    padding: 15px 10px 48px 40px;
+    z-index: 999;
 
     &__icon{
       display: block;
@@ -103,6 +112,32 @@
         }           
     }  
 }
+.menu-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #212121;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+  
+    &:hover,
+    &:focus {
+      fill: var(--blue);
+      color: var(--blue);
+    }
+    &__icon{
+        color: var(--black);
+        transition: var(--transition);
+        &:focus,
+        &:hover{
+            color: var(--blue);
+            transition: var(--transition);
+        }
+
+    }
+  }
   
   @media screen and(min-width: 768px) {
     .mob-menu{
@@ -110,44 +145,65 @@
       &__icon{
         display: none;
       }
+
       &__nav{
         display: none;
-    }
+      }
 
-    &_list-nav{
+      &_list-nav{
         display: none;
-    }
+      }
   
-    &__list-nav1{
+      &__list-nav1{
         display: none;
-    }
+      } 
 
-    &__media{
+       &__media{
         display: none;
+      }
+
     }
+    .menu-close{
+        display: none;
+        &__icon{
+            display: none;
+        }
+    }
+    .btn-mobile-menu {
+      display: none;
     }
 }
   
   @media screen and(min-width: 1200px) {
-    .mob-menu{
+    .mobile-menu{
       display: none;
       &__icon{
         display: none;
       }
       &__nav{
         display: none;
-    }
+      }
 
     &_list-nav{
         display: none;
-    }
+      }
   
     &__list-nav1{
         display: none;
-    }
+      }  
 
     &__media{
         display: none;
+      }
     }
+    .btn-mobile-menu {
+      display: none;
+    }
+    
+    .menu-close{
+        display: none;
+        &__icon{
+            display: none;
+        }
     }
 }   

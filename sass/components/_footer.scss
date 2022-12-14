@@ -1,15 +1,20 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  text-align: center;
+  padding: 60px 0px;
   background-color: var(--black);
 
   &__container{
-    width: 1200px;
+    width: 100%;
+    display: block;
     margin: 0 auto;
-    padding-top: 60px;
-    display: flex;
     justify-content: space-between;
+  }
+
+  &__main{
+    display: block;
+    margin: 0;
+    padding: 0px;
+    list-style: none;
   }
   
   &__web{
@@ -31,26 +36,25 @@
   }
 
   &__address{
-    padding-top: 20px;
+    margin-top: 20px;
     color: var(--white);
     font-size: 16px;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.03em;
     list-style-type: none;
-    margin-bottom: 9px;
     gap: 30px;
     &--p{
-      padding-top: 8px;
+      padding-top: 9px;
     }
   }
 
   &__ul{
     list-style: none;
-    display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 0;
     margin-top: 20px;
-    flex-wrap: wrap;
     gap: 10px;
     transition-property: fill, background-color;
     transition: var(--transition);
@@ -59,9 +63,11 @@
   &__li{
     justify-content: space-between;
     align-items: center;
-    display: flex;
     flex-wrap: wrap;
+    width: 44px;
+    height: 44px;
     gap: 10px;
+    margin-right: 10px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--white);
@@ -76,29 +82,11 @@
       transition: var(--transition);  
     }
 
-    &--svg{
-      width: 20px;
-      height: 20px;
-      align-items: center;
-      fill: var(--white);
-
-      &:hover{
-        background-color: var(--blue);
-        transition: var(--transition);  
-      }
-
-      &:focus{
-        background-color: var(--blue);
-        transition: var(--transition);  
-      }
-    }
-
     &--a{
       width: 44px;
       height: 44px;
-      display: flex;
       align-items: center;
-      padding-left: 12px;
+      padding-right: 12px;
       border-radius: 50%;
       fill: var(--white);
 
@@ -112,49 +100,81 @@
         transition: var(--transition);
       } 
     }
+
+    &--svg{
+      width: 20px;
+      height: 20px;
+      margin: 12px 0px 0px 12px;
+      align-items: center;
+      fill: var(--white);
+
+      &:hover{
+        background-color: var(--blue);
+        transition: var(--transition);  
+      }
+
+      &:focus{
+        background-color: var(--blue);
+        transition: var(--transition);  
+      }
+    }
+  }
+
+  &__social{
+    display: block;
+    margin-top: 60px;
+    text-align: center;
   }
 
   &__h2{
-    padding-top: 12px;
+    padding: 15px 20px 10px 0px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.4;
-    width: 122px;
-    height: 16px;
+    line-height: 1.14;
     text-transform: uppercase;
     font-family: 'Roboto';
     letter-spacing: 0.03em;
-    padding-bottom: 20px;
     color: var(--white);
   }
 
-  &__div--p{
-    padding-top: 12px;
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  &__send{
+    margin-top: 60px;
+    &--p{
+      padding-top: 15px;
+      padding-bottom: 10px;
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      line-height: 1.14;
+      text-align: left;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    &--newsletter{
+      justify-content: center;
+      align-items: center;
+    }
   }
 
-  &__div--newsletter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
   &__input{
-    width: 400px;
+    width: 100%;
     height: 50px;
-    margin-top:10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     border: 1px solid var(--white);
     filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.15));
     border-radius: 4px;
     background-color: var(--black);
-    margin-top: 20px;
-    padding-left: 16px;
+    padding: 13px 16px;
     color: var(--white);
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      color: rgba(255, 255, 255, 0.6);
+    }
 
     &:hover{
       border: 1px solid var(--blue);
@@ -184,20 +204,21 @@
   }
 
   &__button{
-    width: 200px;
-    height: 50px;
-    background: var(--blue);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
     text-align: center;
     align-items: center;
     justify-content: center;
-    display: flex;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 30px;
+    background: var(--blue);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
     letter-spacing: 0.06em;
-    color: #fff;
-    border: 0px;
+    color: var(--white);
+    border: none;
     cursor: pointer;
 
     &:hover{
@@ -206,6 +227,14 @@
 
     &:focus{
       box-shadow: 0px 4px 4px var(--blue);
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 20px;
+      margin-left: 10px;
     }
 
     &--svg{
@@ -229,6 +258,7 @@
   
   &__mail,
   &__tel{
+    font-style: normal;
     font-size: 14px;
     text-decoration-line: none;
     color: rgba(255, 255, 255, 0.6);
@@ -250,5 +280,107 @@
       transition: var(--transition);
     }
   }
+  &__adress{
+    color: var(--white);
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    list-style-type: none;
+    margin-bottom: 9px;
+    flex-direction: column;
+    align-items: center;
+    &--margin-bottom:not(:last-child) {
+        margin-bottom: 8px;
+    }
+  }
 }
 
+  @media screen and(min-width: 768px) {
+    .footer {
+
+      &__container{
+        width: 768px;
+        display: inline-block;
+      }
+
+      &__main{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      &__address {
+        flex-basis: 50%;
+      } 
+
+      &__h2{
+        padding-bottom: 10px;
+      }
+
+      &__social{
+        margin-top: 0px;
+      }
+
+      &__send{
+        margin-top: 0px;
+        padding: 0;
+      }
+    }
+  }
+
+  @media screen and(min-width: 1200px) {
+    .footer {
+      display: flex;
+
+      &__container{
+        width: 1200px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+      } 
+
+      &__main{
+        text-align: left;
+      }
+
+      &__address {
+        flex-basis: auto;
+        align-items: flex-start;
+        display: flex;
+      }
+
+      &__h2{
+        text-align: left;
+      }
+    
+      &__button{
+        display: flex;
+      } 
+
+      &__text {
+          line-height: 2;
+          text-align: left;
+      }
+
+      &__ul{
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-between;
+      }
+
+      &__send{
+        margin-left: 25px;
+      }
+
+      &__input{
+        width: 400px;
+        margin-right: 12px;
+      } 
+
+      &__send--newsletter{
+        display: flex;
+      }
+  }
+}
