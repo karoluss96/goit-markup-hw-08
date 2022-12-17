@@ -17,14 +17,9 @@
     transition-property: opacity, transform;
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
-    &.is-hidden {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-    }
   }
   .modal{
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -67,26 +62,7 @@
     visibility: hidden;
     pointer-events: none;
   }
-  .close-btn{
-    cursor: pointer;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    background-color: var(--white);
-    border-radius:50%;
-    border: 1px solid rgba(0, 0, 0, 1);
-    opacity: 100%;
-    z-index: 1000;
-    &:hover,
-    &focus{
-        cursor: pointer;
-  }
-}
 .form{
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -188,11 +164,6 @@
         border-radius: 4px;
         outline: none;
         transition: var(--transition);
-      }
-      &::placeholder {
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.01em;
       }
     }
   }

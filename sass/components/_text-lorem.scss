@@ -50,12 +50,9 @@
       width: 350px;
     }
 
-    &--title{
-      text-align: center;
-    }
-  
     &--text{
       display: inline-block;
+      padding-bottom: 30px;
     }
   }
 }
@@ -86,6 +83,7 @@
 
   &--text{
       text-align: center;
+      padding-bottom: 0px;
     }
   }
 }
