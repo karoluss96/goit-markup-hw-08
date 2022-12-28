@@ -107,23 +107,25 @@
   .sec4__list{
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     
     &--li{
-      width: 354px;
+      width: 250px;
+      height: 400px;
       margin-bottom: 30px;
+      margin-left: 15px;
+      margin-right: 15px;
     }
   }
   .sec4__ul{
     justify-content: space-between;
     &--a{
-      display: inline-block;
+      display: inline-flex;
       justify-content: space-between;
     }
     &--figure{
       display: inline-block;
-      width: 354px;
-      height: 536px;
+      width: 250px;
+      height: 200px;
       margin-bottom: 0px;
     }
 

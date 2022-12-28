@@ -41,17 +41,17 @@
 }
 @media screen and (min-width: 768px){
   .sec2__lorem{
-    display: inline-block;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin-left: -15px;
-    margin-right: -15px;
+    padding: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 15px;
     &--li{
       width: 350px;
     }
 
     &--text{
-      display: inline-block;
+      display: inline-flex;
       padding-bottom: 30px;
     }
   }
