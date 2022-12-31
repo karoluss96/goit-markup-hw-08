@@ -28,7 +28,7 @@
 
 .sec4__h2 {
   font-weight: 700;
-  font-size: 42px;
+  font-size: 28px;
   letter-spacing: 0.03em;
   color: var(--text-black);
   margin-bottom: 30px;
@@ -68,7 +68,7 @@
   padding: 30px 0px;
 }
 .sec4__ul--figure {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   position: relative;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -152,7 +152,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .sec4_h2 {
+  .sec4__h2 {
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.6;
@@ -269,6 +269,7 @@ footer {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bgImgMob1x.png");
   background-size: cover;
   background-position: center top;
+  background-repeat: no-repeat;
   background-size: 480px 796px;
   padding-top: 100px;
   padding-bottom: 0px;
@@ -318,12 +319,10 @@ footer {
   font-weight: 900;
   font-style: normal;
   font-weight: bold;
-  padding-top: 118px;
-  padding-bottom: 30px;
   line-height: 1.167;
   letter-spacing: 0.06em;
   margin: 0 auto;
-  max-width: 250px;
+  max-width: 290px;
 }
 .sec1__main-container {
   width: 480px;
@@ -396,13 +395,13 @@ footer {
 .port1__ul {
   display: flex;
   justify-content: flex-start;
-  list-style-type: none;
   flex-wrap: wrap;
   margin-left: -8px;
   margin-bottom: 40px;
   gap: 8px;
 }
 .port1__ul--button {
+  margin-left: 15px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -412,7 +411,7 @@ footer {
   border: 0px solid transparent;
   display: inline-block;
   text-align: center;
-  padding: 6px 22px;
+  padding: 6px 28px;
   line-height: 1.625;
   letter-spacing: 0.03em;
   min-width: 73px;
@@ -431,10 +430,16 @@ footer {
     justify-content: center;
     margin-bottom: 30px;
   }
+  .port1__ul--button {
+    margin-left: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .port1__ul {
-    margin-bottom: -8px;
+    margin-bottom: 50px;
+  }
+  .port1__ul--button {
+    padding: 6px 22px;
   }
 }
 .container {
@@ -461,8 +466,8 @@ footer {
 
 @media screen and (min-width: 480px) {
   .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -503,6 +508,8 @@ footer {
   margin-bottom: 30px;
 }
 .sec5-clients__list {
+  display: inline-flex;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: center;
   align-items: center;
@@ -513,7 +520,6 @@ footer {
   padding-top: 60px;
 }
 .sec5__li {
-  height: 90px;
   transition: var(--transition);
   width: 210px;
 }
@@ -720,6 +726,8 @@ footer {
   color: var(--white);
 }
 .footer__send--newsletter {
+  margin-left: 15px;
+  margin-right: 15px;
   justify-content: center;
   align-items: center;
 }
@@ -871,6 +879,10 @@ footer {
     margin-top: 0px;
     padding: 0;
   }
+  .footer__send--newsletter {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer {
@@ -917,6 +929,8 @@ footer {
   }
   .footer__send--newsletter {
     display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 .backdrop {
@@ -1603,8 +1617,9 @@ footer {
   }
 }
 .port2__ul {
+  margin-left: 15px;
+  margin-right: 15px;
   display: grid;
-  grid-template-columns: auto;
   list-style-type: none;
   flex-wrap: wrap;
   align-items: stretch;
@@ -1956,6 +1971,7 @@ footer {
   padding-bottom: 15px;
 }
 .section__port2 {
+  margin-left: 15px;
   padding-bottom: 15px;
 }
 
@@ -2062,6 +2078,7 @@ footer {
     padding-bottom: 56px;
   }
   .section__port2 {
+    margin-left: 0;
     padding-bottom: 50px;
   }
 }
@@ -2081,7 +2098,7 @@ footer {
   line-height: 1.14;
   text-transform: uppercase;
   display: block;
-  text-align: left;
+  text-align: center;
   list-style: none;
 }
 .sec2__lorem--text {
@@ -2091,6 +2108,7 @@ footer {
   color: var(--text-grey);
   letter-spacing: 0.03em;
   text-align: justify;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 767px) {
@@ -2099,7 +2117,7 @@ footer {
     margin-top: 30px;
   }
   .sec2__lorem--li {
-    width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2116,6 +2134,9 @@ footer {
   .sec2__lorem--text {
     display: inline-flex;
     padding-bottom: 30px;
+  }
+  .sec2__lorem--title {
+    text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2138,6 +2159,7 @@ footer {
   }
   .sec2__lorem--title {
     display: flex;
+    text-align: left;
   }
   .sec2__lorem--text {
     text-align: center;
