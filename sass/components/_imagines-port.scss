@@ -1,10 +1,12 @@
 .port2{
   &__ul{
+    margin-left: 15px;
+    margin-right: 15px;
+    display: grid;
     list-style-type: none;
     flex-wrap: wrap;
-    margin-bottom: 94px;
-    padding-bottom: 20px;
-    gap: 30px;
+    align-items: stretch;
+    gap: 30px 30px;
     letter-spacing: 0.03em;
   }
 
@@ -37,11 +39,12 @@
 
     &--img{
       position: absolute;
+      display: inline-block;
+      content: "";
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      letter-spacing: 0.03em;
       background-color: rgba(33, 150, 243, 0.9);
       transform: translateY(100%);
       transition: var(--transition);
@@ -51,12 +54,16 @@
     }
 
     &--p{
+      position: absolute;
+      top: 0;
+      left: 0;
       text-align: left;
-      padding-top: 49px;
+      padding-top: 55px;
       padding-left: 24px;
       padding-right: 24px;
       font-family: "Roboto";
       font-size: 18px;
+      line-height: 1.56;
       letter-spacing: 0.03em;
       color: #ffffff;
     }
@@ -67,7 +74,7 @@
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
-    letter-spacing: 0.06em;
+    border-top: transparent;
 
     &--h3{
       font-weight: 700;
@@ -78,12 +85,10 @@
     }
   
     &--p{
-      color: #757575;
-      width: 322px;
+      color: var(--text-grey);
       height: 30px;
       font-size: 16px;
       line-height: 1.875;
-      letter-spacing: 0.03em;
     }
   }  
 
@@ -112,10 +117,19 @@
   }  
 }
 
+@media screen and (min-width: 768px){
+  .port2{
+    &__ul{
+        grid-template-columns: auto auto;
+    }
+  }
+}
+
 @media screen and (min-width: 1200px){
   .port2{
     &__ul{
       display: flex;
+      grid-template-columns: auto auto auto;
     }
     &__li{
       display: flex;

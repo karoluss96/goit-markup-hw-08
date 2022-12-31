@@ -1,13 +1,13 @@
 .port1__ul{
   display: flex;
   justify-content: flex-start;
-  list-style-type: none;
   flex-wrap: wrap;
   margin-left: -8px;
   margin-bottom: 40px;
   gap: 8px;
 
   &--button{
+    margin-left: 15px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -17,7 +17,7 @@
     border: 0px solid transparent;
     display: inline-block;
     text-align: center;
-    padding: 6px 22px;
+    padding: 6px 28px;
     line-height: 1.625;
     letter-spacing: 0.03em;
     min-width: 73px;
@@ -38,13 +38,19 @@
   .port1__ul{
     justify-content: center;
     margin-bottom: 30px;
+    &--button{
+      margin-left: 0;
+    }
   }
 
 }
 
 @media screen and (min-width:1200px){
   .port1__ul{
-    margin-bottom: -8px;
+      margin-bottom: 50px;
+    &--button{
+      padding: 6px 22px;
+    }
   }
 
 }

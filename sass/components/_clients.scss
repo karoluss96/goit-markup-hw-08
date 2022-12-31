@@ -9,6 +9,8 @@
   margin-bottom: 30px;
 
   &__list{
+    display: inline-flex;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: center;
     align-items: center;
@@ -21,7 +23,6 @@
 
   &__li{
 
-    height: 90px;
     transition: var(--transition);
     width: 210px;
 
@@ -65,7 +66,6 @@
 
 @media screen and(min-width: 768px) {
   .sec5-clients{
-   
     &__list{
       display: inline-flex;
       flex-wrap: wrap;
