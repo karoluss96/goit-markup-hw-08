@@ -1037,6 +1037,15 @@ footer {
 .form__label:first-of-type {
   margin-top: 0;
 }
+.form__label--svg {
+  position: absolute;
+  display: flex;
+  width: 15px;
+  height: 12px;
+  margin-top: 18px;
+  margin-left: 12px;
+  fill: var(--text-black);
+}
 .form__label--input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1176,32 +1185,17 @@ footer {
   font-size: 16px;
 }
 
-@media screen and (min-width: 480px) {
-  .modal {
-    width: 450px;
-    min-height: 609px;
-  }
-  .form {
-    width: 450px;
-  }
+@media screen and (min-width: 768px) {
   .form__checkbox {
     font-size: 10px;
     line-height: 1.11;
   }
   .form__span--a {
-    position: absolute;
     top: 18px;
     left: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .modal {
-    width: 530px;
-    min-height: 581px;
-  }
-  .form {
-    width: 530px;
-  }
   .form__checkbox {
     padding-left: 14px;
     font-size: 14px;
@@ -2056,9 +2050,11 @@ footer {
     width: 100%;
   }
   .sec2 {
+    width: 1200px;
     display: flex;
   }
   .sec3 {
+    width: 1200px;
     display: flex;
     background-color: var(--white);
     font-size: 14px;
@@ -2074,10 +2070,12 @@ footer {
     padding-bottom: 94px;
   }
   .section__port1 {
+    width: 1200px;
     padding-top: 94px;
     padding-bottom: 56px;
   }
   .section__port2 {
+    width: 1200px;
     margin-left: 0;
     padding-bottom: 50px;
   }
@@ -2165,4 +2163,59 @@ footer {
     text-align: center;
     padding-bottom: 0px;
   }
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+}
+
+.icon-antena {
+  width: 0.9423828125em;
+  background-image: url("../images/antena.svg");
+}
+
+.icon-astronaut {
+  width: 0.9013671875em;
+}
+
+.icon-clock {
+  width: 0.9716796875em;
+}
+
+.icon-comp {
+  width: 1.2958984375em;
+}
+
+.icon-envelope {
+  width: 1.3330078125em;
+}
+
+.icon-Logo1 {
+  width: 1.7373046875em;
+}
+
+.icon-Logo2 {
+  width: 1.7373046875em;
+}
+
+.icon-Logo3 {
+  width: 1.7666015625em;
+}
+
+.icon-Logo4 {
+  width: 1.7666015625em;
+}
+
+.icon-Logo5 {
+  width: 1.7666015625em;
+}
+
+.icon-Logo6 {
+  width: 1.7666015625em;
+}
+
+.icon-telefon {
+  width: 0.625em;
 }/*# sourceMappingURL=main.css.map */
