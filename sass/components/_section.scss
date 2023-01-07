@@ -95,9 +95,11 @@
     width: 100%;
   }
   .sec2{
+    width: 1200px;
     display: flex;
   }
   .sec3{
+    width: 1200px;
     display: flex;
     background-color: var(--white);
     font-size: 14px;
@@ -116,11 +118,13 @@
   .section {
  
     &__port1{
+      width: 1200px;
       padding-top: 94px;
       padding-bottom: 56px;
     }
   
     &__port2{
+      width: 1200px;
       margin-left: 0;
       padding-bottom: 50px;
     }

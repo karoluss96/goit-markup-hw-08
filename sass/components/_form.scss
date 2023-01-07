@@ -105,6 +105,15 @@
     &:first-of-type{
       margin-top: 0;
     }
+    &--svg{
+      position: absolute;
+      display: flex;
+      width: 15px;
+      height: 12px;
+      margin-top: 18px;
+      margin-left: 12px;
+      fill:var(--text-black);
+    }
 
     &--input{
       border: 1px solid rgba(33, 33, 33, 0.2);
@@ -264,19 +273,13 @@
   }
   }
 
-  @media screen and (min-width: 480px) {
-    .modal{
-      width: 450px;
-      min-height: 609px;
-    }
+  @media screen and (min-width: 768px) {
     .form{
-      width: 450px;
       &__checkbox{
         font-size: 10px;
         line-height: 1.11;
       }
       &__span--a{
-        position: absolute;
         top: 18px;
         left: 21px;
       }
@@ -284,12 +287,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    .modal{
-      width: 530px;
-      min-height: 581px;
-    }
     .form{
-      width: 530px;
       &__checkbox{
         padding-left: 14px;
         font-size: 14px;
