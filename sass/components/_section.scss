@@ -54,6 +54,7 @@
     padding-right: 15px;
   }
 }
+.sec3
 
 
 .sec4{
@@ -69,7 +70,8 @@
 
 @media screen and (min-width:768px){
   .sec2{
-    padding-top: 60px;
+    margin-inline: auto;
+    padding-top: 94px;
     display: inline-flex;
   }
   .ic{
@@ -99,6 +101,7 @@
     display: flex;
   }
   .sec3{
+    margin-inline: auto;
     width: 1200px;
     display: flex;
     background-color: var(--white);
@@ -125,7 +128,7 @@
   
     &__port2{
       width: 1200px;
-      margin-left: 0;
+      margin-inline: auto;
       padding-bottom: 50px;
     }
   }
