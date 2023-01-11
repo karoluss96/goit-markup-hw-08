@@ -7,15 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/modern-normalize.css" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
-  <title>Web Studio</title>
+  <title>Web studio</title>
   <meta name="Autor" content="Karol Śpila">
   <link href="./css/main.min.css" rel="stylesheet" />
 </head>
 
 <body>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto&display=swap" rel="stylesheet">
+
   <header class = 'header'>
-    <div class="container">
+    <div class="container container--header-mobile">
     <a class ='header__link' href="index.html">
       <span class = "header__web"> Web</span><span class="header__stat">Studio</span></a>
     <nav class="header__nav">
@@ -42,111 +44,157 @@
         +48 111 111 111</a>
       </li>
   </ul>
+  <button class="btn-mobile-menu" type="button" data-menu-open>
+    <svg class="btn-mobile-menu__icon js-open-menu" width="24" height="16">
+      <use href="images/icons.svg#btn-mobile-menu"></use>
+    </svg>
+  </button>
   </div>
+  <div class="mob-menu" data-menu>
+    <div class="menu-close js-menu-container is-open" id="mobile-menu">
+      <button type="button" class="menu-close js-close-menu" id="js-open-menu" aria-expanded="false" data-menu-close>
+        <svg class="menu-close__icon" viewBox="0 0 40 40">
+          <use href= "./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <nav>
+    <ul class="mob-menu__nav">
+      <li>
+      <a href="index.html" class = "header__nav--a active header__link">Agencja</a>
+    </li>
+    <li>
+      <a href="portfolio.html" class = "header__nav--a header__link">Portfolio</a>
+    </li>
+    <li>
+      <a href="contact.html" class = "header__nav--a header__link">Kontakt</a>
+    </li> 
+    </ul>
+   </nav>
+    <div>
+    <ul class="mob-menu__list-nav1">
+      <li class="mob-menu__list-menu1">
+	    <a class="mob-menu__list-nav--a mob-menu__mail" href="mailto:info@example.com">
+      info@devstudio.com</a>
+      <li class="mob-menu__list-menu1">
+        <a class="mob-menu__list-nav--a mob-menu__tel" href="tel:+48111111111">
+        +48 111 111 111</a>
+      </li>
+  </ul>
+ </div>
+  <div>
+    <a href="instagram.com" class="mob-menu__media">Instagram</a>
+    <a href="facebook.com" class="mob-menu__media">Facebook</a>
+    <a href="tweeter.com" class="mob-menu__media">Tweeter</a>
+    <a href="instagram.com" class="mob-menu__media">Instagram</a>
+  </div>
+  <button type="button" class="mobile-menu js-open-menu">
+  </button>
+  </div>
+</div>
   </header>
+
   <main>
-    <section class="section sec1">
+<section class="section sec1">
     <div class="sec1__main-container container">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto&display=swap" rel="stylesheet">
-      <h1 class="sec1__title">Efektywne rozwiązania dla waszego biznesu</h1>
+      <h1 class="sec1__title">Efektowne rozwiązania dla waszego biznesu</h1>
       <button type="button" class="sec1__but" data-modal-open>Zamów usługę</button>
     </div>
     </section>
-    <section class="section sec2">
-      <div class="container">
+  <section class="section sec2">
 	    <ul class="sec2__lorem">
-        <li class="sec2__lorem-li">
+        <li class="sec2__lorem--li">
           <div class="ic">
             <svg class="ics">
               <use href="./images/icons.svg#icon-antenna">
               </use>
             </svg>
           </div>
-      <span class ="sec2__lorem-title">Lorem ipsum</span>
-      <span class ="sec2__lorem-text">
+      <span class ="sec2__lorem--title">Lorem ipsum</span>
+      <span class ="sec2__lorem--text">
 		    Lorem ipsum dolor sit amet, 
           consectetur adipiscing elit.
            Nam vel arcu sem. Sed non sodales dui. 
            Interdum et malesuada</span>
 		   </li>
-      <li class="sec2__lorem-li">
-      <div class="ic">
+       <li class="sec2__lorem--li">
+        <div class="ic">
           <svg class="ics">
             <use href="./images/icons.svg#icon-clock">
             </use>
           </svg>
         </div>
-      <span class="sec2__lorem-title">Lorem ipsum</span>
-      <span class ="sec2__lorem-text">
+      <span class="sec2__lorem--title">Lorem ipsum</span>
+      <span class ="sec2__lorem--text">
           Lorem ipsum dolor sit amet, 
           consectetur adipiscing elit.
           Nam vel arcu sem. Sed non sodales dui. 
           Interdum et malesuada</span>
 		   </li>
-      <li class="sec2__lorem-li">
+       <li class="sec2__lorem--li">
         <div class="ic">
           <svg class="ics">
             <use href="./images/icons.svg#icon-diagram">
             </use>
           </svg>
         </div>
-        <span class="sec2__lorem-title">Lorem ipsum</span>
-        <span class ="sec2__lorem-text">
+      <span class="sec2__lorem--title">Lorem ipsum</span>
+      <span class ="sec2__lorem--text"> 
         Lorem ipsum dolor sit amet, 
           consectetur adipiscing elit.
           Nam vel arcu sem. Sed non sodales dui. 
           Interdum et malesuada</span>
 	    </li>
-      <li class="sec2__lorem-li">
+      <li class="sec2__lorem--li">
         <div class="ic">
           <svg class="ics">
             <use href="./images/icons.svg#icon-astronaut">
             </use>
           </svg>
         </div>
-        <span class="sec2__lorem-title">Lorem ipsum</span>
-        <span class ="sec2__lorem-text">
+      <span class="sec2__lorem--title">Lorem ipsum</span>
+      <span class ="sec2__lorem--text">
           Lorem ipsum dolor sit amet, 
           consectetur adipiscing elit.
           Nam vel arcu sem. Sed non sodales dui. 
           Interdum et malesuada</span>
 	    </li>
     </ul>
-  </div>
 </section>
-  <section class="section"> 
+ <section class="section sec3"> 
     <div class="container"> 
   <h2 class="sec3__h2">Czym się zajmujemy?</h2>
      <ul class="sec3__list-images">
-     <li>
-      <figure class="sec3__figure">
-      <img src="images/img2.png" alt="Projektowanie" width="370" height="294"/>
+     <li><figure class="sec3__figure"><picture>
+      <img srcset="images/img2.png 1x, images/img2-2x.png 2x"
+      src="images/img2.png" class="services__image" alt="Projektowanie" width="370" height="294"/></picture>
     <figcaption class="sec3__under-photo">Aplikacje komputerowe</figcaption>
     </figure>
   </li>
-    <li>
-      <figure class="sec3__figure">
-      <img src="images/img1.png" alt="Mockaping" width="370" height="294"/>
+    <li><figure class="sec3__figure"><picture>
+      <img srcset="images/img1.png 1x, images/img1-2x.png 2x" 
+      src="images/img1.png" class="services__image" alt="Mockaping" width="370" height="294"/></picture>
       <figcaption class="sec3__under-photo">Aplikacje mobilne</figcaption>
     </figure>
-    </li>
-    <li>
-      <figure class="sec3__figure">
-      <img src="images/img3.png" alt="Ustalanie" width="370" height="294"/>
-      <figcaption class="sec3__under-photo">rozwiązania graficzne</figcaption>
+  </li>
+    <li><figure class="sec3__figure"><picture>
+      <img srcset="images/img3.png 1x, images/img3-2x.png 2x" 
+      src="images/img3.png" class="services__image" alt="Ustalanie" width="370" height="294"/>    </picture>
+      <figcaption class="sec3__under-photo">Rozwiązania graficzne</figcaption>
     </figure>
-    </li>
+  </li>
      </ul>
     </div>
   </section>
-  <section class ="section sec4">
-  <div class="container"> 
-      <h2 class = 'sec4__h2'>Nasz zespół</h2>
+ <section class ="section sec4">
+      <h2 class = "sec4__h2">Nasz zespół</h2>
       <ul class="sec4__list">
-      <li><figure class="sec4__ul--figure"><img  src="images/img-3.png" alt="John Doe" width="270" height="260"/>
+      <li class="sec4__list--li">
+        <figure class="sec4__ul--figure"><picture>
+        <img srcset="images/img_a1x.png 1x, images/imgTab_a1x.jpg 2x" src="images/img-3.png" alt="John Doe" width="270" height="260"/></picture>
         <figcaption class="sec4__ul--figcaption">
           <h3 class="sec4__h3">John Doe</h3>
-		  <p class="sec4__p"> Product Designer</p>
+          <p class = "sec4__p"> Product Designer</p>
         <ul class="sec4__ul">
         <li class="sec4__ul--li">
           <a class="sec4__ul--a" href="">
@@ -181,14 +229,18 @@
           </a>
         </li> 
         </ul>
-        </figcaption></figure></li>
-      <li><figure class="sec4__ul--figure"><img  src="images/img-2.png" alt="Fronted Developer" width="270" height="260"/>
+        </figcaption>
+      </figure>
+    </li>
+      <li class="sec4__list--li">
+        <figure class="sec4__ul--figure"><picture>
+        <img srcset="images/img_b1x.png 1x, images/imgTab_b1x.jpg 2x" src="images/img-2.png" alt="Fronted Developer" width="270" height="260"/></picture>
         <figcaption class="sec4__ul--figcaption">
           <h3 class="sec4__h3">John Doe</h3>
-          <p class="sec4__p"> Frontend Developer</p>
+          <p class = "sec4__p"> Frontend Developer</p>
           <ul class="sec4__ul">
             <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
+              <a class="sec4__ul--a" href="https://instagram.com">
                 <svg class="sec4__ul--svg">
                   <use href="./images/icons.svg#icon-instagram">
                   </use>
@@ -196,7 +248,7 @@
               </a>
             </li> 
             <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
+              <a class="sec4__ul--a" href="https://twitter.com">
                 <svg class="sec4__ul--svg">
                   <use href="./images/icons.svg#icon-twitter">
                   </use>
@@ -204,7 +256,7 @@
               </a>
             </li> 
             <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
+              <a class="sec4__ul--a" href="https://facebook.com">
                 <svg class="sec4__ul--svg">
                   <use href="./images/icons.svg#icon-facebook">
                   </use>
@@ -212,7 +264,7 @@
               </a>
             </li> 
             <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
+              <a class="sec4__ul--a" href="https://linkedin.com">
                 <svg class="sec4__ul--svg">
                   <use href="./images/icons.svg#icon-linkedin">
                   </use>
@@ -220,13 +272,60 @@
               </a>
             </li> 
             </ul>  
-        </figcaption></figure></li>
-      <li><figure class="sec4__ul--figure"><img  src="images/img-1.png" alt="Marketing" width="270" height="260"/>
+        </figcaption>
+		</figure>
+		</li>
+      <li class="sec4__list--li">
+        <figure class="sec4__ul--figure"><picture>
+          <img srcset="images/img_c1x.png 1x, images/imgTab_c2x.png 2x" src="images/img-1.png" alt="Marketing" width="270" height="260"/></picture>
         <figcaption class="sec4__ul--figcaption">
           <h3 class="sec4__h3">John Doe</h3>
-          <p class="sec4__p"> Marketing </p>
+          <p class = "sec4__p"> Marketing </p>
           <ul class="sec4__ul">
-            <li class="sec4__ul--li"> 
+            <li class="sec4__ul--li">
+              <a class="sec4__ul--a" href="https://instagram.com">
+                <svg class="sec4__ul--svg">
+                  <use href="./images/icons.svg#icon-instagram">
+                  </use>
+                </svg>
+              </a>
+            </li> 
+            <li class="sec4__ul--li">
+              <a class="sec4__ul--a" href="https://twitter.com">
+                <svg class="sec4__ul--svg">
+                  <use href="./images/icons.svg#icon-twitter">
+                  </use>
+                </svg>
+              </a>
+            </li> 
+            <li class="sec4__ul--li">
+              <a class="sec4__ul--a" href="https://facebook.com">
+                <svg class="sec4__ul--svg">
+                  <use href="./images/icons.svg#icon-facebook">
+                  </use>
+                </svg>
+              </a>
+            </li> 
+            <li class="sec4__ul--li">
+              <a class="sec4__ul--a" href="https://linkedin.com">
+                <svg class="sec4__ul--svg">
+                  <use href="./images/icons.svg#icon-linkedin">
+                  </use>
+                </svg>
+              </a>
+            </li> 
+            </ul>  
+        </figcaption>
+		</figure>
+		</li>
+      <li class="sec4__list--li">
+        <figure class="sec4__ul--figure"><picture>
+          <img srcset="images/img_d1x.png 1x, images/imgTab_d2x.png 2x" src="images/imgJD.png" alt="UI Designer" width="270" height="260"/></picture>
+        <figcaption class="sec4__ul--figcaption">
+          <h3 class="sec4__h3">John Doe</h3>
+          <p  class = "sec4__p"> UI Designer</p>
+          <ul class="sec4__ul">
+            <li class="sec4__ul--li">
               <a class="sec4__ul--a" href="">
                 <svg class="sec4__ul--svg">
                   <use href="./images/icons.svg#icon-instagram">
@@ -259,51 +358,12 @@
               </a>
             </li> 
             </ul>
-        </figcaption></figure></li>
-      <li><figure class="sec4__ul--figure"><img  src="images/imgJD.png" alt="UI Designer" width="270" height="260"/> 
-        <figcaption class="sec4__ul--figcaption">
-          <h3 class="sec4__h3">John Doe</h3>
-          <p class="sec4__p"> UI Designer</p>
-          <ul class="sec4__ul">
-            <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
-                <svg class="sec4__ul--svg">
-                  <use href="./images/icons.svg#icon-instagram">
-                  </use>
-                </svg>
-              </a>
-            </li> 
-            <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
-                <svg class="sec4__ul--svg">
-                  <use href="./images/icons.svg#icon-twitter">
-                  </use>
-                </svg>
-              </a>
-            </li> 
-            <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
-                <svg class="sec4__ul--svg">
-                  <use href="./images/icons.svg#icon-facebook">
-                  </use>
-                </svg>
-              </a>
-            </li> 
-            <li class="sec4__ul--li">
-              <a class="sec4__ul--a" href="">
-                <svg class="sec4__ul--svg">
-                  <use href="./images/icons.svg#icon-linkedin">
-                  </use>
-                </svg>
-              </a>
-            </li> 
-            </ul>
-        </figcaption></figure></li>
+        </figcaption>
+		</figure>
+		</li>
       </ul>
-    </div>
     </section>
-    <section class="section sec5">
-      <div class="container">
+<section class="section sec5">
         <h2 class="sec5-clients">Nasi klienci</h2>
         <ul class="sec5-clients__list">
           <li class = "sec5__li">
@@ -355,28 +415,28 @@
             </a>
           </li>
         </ul>
-      </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__container">
-      <div>
+      <div class="footer__main">
       <h2>
       <a class="footer__end" href="index.html">
         <span class = "footer__web"> Web</span><span class="footer__stat">Studio</span>
       </a>
     </h2>
-    <address class="footer__address">
-      <p class="footer__address--p"> m. Warszawa Aleje Jerozolimskie 21 </p>
-      <p class="footer__address--p"><a class="footer__mail" href="mailto:info@example.com">info@example.com</a></p>
-    <p class="footer__address--p"><a class="footer__tel" href="tel:+48111111111">+48 111 111 111</a></p>
+    <address class="footer__adress">
+      <p class="footer__adress--p"> m. Warszawa Aleje Jerozolimskie 21 </p>
+      <p class="footer__adress--p"><a class="footer__mail" href="mailto:info@example.com">info@example.com</a></p>
+    <p class="footer__adress--p"><a class="footer__tel" href="tel:+48111111111">+48 111 111 111</a></p>
 </address>
 </div>
-<div>
+<div class="footer__social">
   <h2 class="footer__h2">Dołącz do nas</h2>
   <ul class="footer__ul">
   <li class="footer__li">
-    <a class="footer__li--a" href="#">
+    <a class="footer__li--a" target="_blank"
+    rel="noreferrer noopener" href="https://instagram.com">
     <svg class="footer__li--svg">
       <use href="./images/icons.svg#icon-instagram">
       </use>
@@ -384,7 +444,8 @@
   </a>
   </li>
   <li class="footer__li">
-    <a class="footer__li--a" href="#">
+    <a class="footer__li--a" target="_blank"
+    rel="noreferrer noopener" href="https://twitter.com">
     <svg class="footer__li--svg">
       <use href="./images/icons.svg#icon-twitter">
       </use>
@@ -392,7 +453,8 @@
   </a>
   </li>
   <li class="footer__li">
-    <a class="footer__li--a" href="#">
+    <a class="footer__li--a" target="_blank"
+    rel="noreferrer noopener" href="https://facebook.com">
     <svg class="footer__li--svg">
       <use href="./images/icons.svg#icon-facebook">
       </use>
@@ -400,7 +462,8 @@
   </a>
   </li>
   <li class="footer__li">
-    <a class="footer__li--a" href="#">
+    <a class="footer__li--a"  target="_blank"
+    rel="noreferrer noopener" href="https://linkedin.com">
     <svg class="footer__li--svg">
       <use href="./images/icons.svg#icon-linkedin">
       </use>
@@ -409,9 +472,9 @@
   </li>
 </ul>
 </div>
-<div>
-<p class="footer__div--p">Zapisz się do newslettera</p>
-<div class="footer__div--newsletter">
+<div class="footer__send">
+<p class="footer__send--p">Zapisz się do newslettera</p>
+<div class="footer__send--newsletter">
 <label class="footer__label--email" for="mail">
   <input class="footer__input" type="email" name="mail" id="mail" placeholder="E-mail"/>
 </label>
@@ -425,10 +488,10 @@
   </div>
 </div>
   </footer>
-  <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal__button" data-modal-close>X</button>
-      <form class="form" name="sign-up" method="POST">
+      <form class="form" name="sign-up" method="POST" autocomplete="on" novalidate>
         <h2 class="form__h2">Zostaw swoje dane w formularzu poniżej</h2>
         <div class="form__div">
         <label class="form__label" for="name">Imię
@@ -468,6 +531,7 @@
       </form>
     </div>
   </div>
+  <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 </html>
