@@ -567,7 +567,7 @@ footer {
   }
   .sec5__ul--a {
     width: 226px;
-    display: inline-block;
+    display: inline-flex;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1990,7 +1990,6 @@ footer {
   align-items: center;
   width: 70px;
   height: 70px;
-  width: 450px;
 }
 
 .sec2 {
@@ -2017,8 +2016,8 @@ footer {
   }
 }
 
-.sec3 .sec4 {
-  background-color: var(--grey);
+.sec4 {
+  background-color: #f5f4fa;
   font-size: 16px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -2052,6 +2051,9 @@ footer {
     display: flex;
     width: 100%;
   }
+  .ics {
+    width: 100%;
+  }
   .sec2 {
     width: 1200px;
     display: flex;
@@ -2066,6 +2068,7 @@ footer {
     justify-content: space-between;
   }
   .sec4 {
+    background-color: var(--grey);
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -2075,6 +2078,7 @@ footer {
   }
   .section__port1 {
     width: 1200px;
+    margin-inline: auto;
     padding-top: 94px;
     padding-bottom: 56px;
   }
