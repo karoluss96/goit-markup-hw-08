@@ -32,7 +32,6 @@
   align-items: center;
   width: 70px;
   height: 70px;
-  width: 450px;
 }
 
 .sec2{
@@ -54,11 +53,10 @@
     padding-right: 15px;
   }
 }
-.sec3
 
 
 .sec4{
-  background-color: var(--grey);
+  background-color: #f5f4fa;
   font-size: 16px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -96,6 +94,9 @@
     display: flex;
     width: 100%;
   }
+  .ics{
+    width: 100%;
+  }
   .sec2{
     width: 1200px;
     display: flex;
@@ -110,6 +111,7 @@
     justify-content: space-between
   }
   .sec4{
+    background-color: var(--grey);
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -122,6 +124,7 @@
  
     &__port1{
       width: 1200px;
+      margin-inline: auto;
       padding-top: 94px;
       padding-bottom: 56px;
     }
