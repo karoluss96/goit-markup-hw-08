@@ -107,6 +107,7 @@
   .sec4__list{
     display: inline-flex;
     flex-wrap: wrap;
+    padding-bottom: 0;
     
     &--li{
       width: 250px;
