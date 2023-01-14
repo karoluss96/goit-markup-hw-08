@@ -1003,13 +1003,13 @@ footer {
   fill: var(--black);
 }
 .modal__button--svg:hover {
-  color: var(--blue);
+  fill: var(--blue);
   border-color: var(--blue);
   cursor: pointer;
   transition: var(--transition);
 }
 .modal__button--svg:focus {
-  color: var(--blue);
+  fill: var(--blue);
   border-color: var(--blue);
   cursor: pointer;
   transition: var(--transition);
@@ -1071,13 +1071,13 @@ footer {
   fill: var(--text-black);
 }
 .form__label--svg:hover {
-  color: var(--blue);
+  fill: var(--blue);
   border-color: var(--blue);
   cursor: pointer;
   transition: var(--transition);
 }
 .form__label--svg:focus {
-  color: var(--blue);
+  fill: var(--blue);
   border-color: var(--blue);
   cursor: pointer;
   transition: var(--transition);
