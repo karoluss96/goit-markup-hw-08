@@ -4,8 +4,8 @@
   background-color: var(--black);
 
   &__container{
-    width: 100%;
-    display: block;
+    flex-basis: calc((100% - 30px) / 3);
+    display: flex;
     margin: 0 auto;
     justify-content: space-between;
   }
@@ -305,7 +305,8 @@
     .footer {
 
       &__container{
-        width: 768px;
+        flex-basis: calc((100% - 20px) / 2);
+        //width: 768px;
         display: inline-flex;
         flex-wrap: wrap;
       }
@@ -343,6 +344,7 @@
       display: flex;
 
       &__container{
+        flex-basis: content;
         width: 1200px;
         display: flex;
         margin: 0 auto;
