@@ -125,6 +125,7 @@
   .sec4__list {
     display: inline-flex;
     flex-wrap: wrap;
+    padding-bottom: 0;
   }
   .sec4__list--li {
     width: 250px;
@@ -573,6 +574,7 @@ footer {
 }
 @media screen and (min-width: 1200px) {
   .sec5-clients {
+    margin-top: 0;
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
@@ -1634,7 +1636,7 @@ footer {
     border-bottom: 0cm;
     border-radius: 2px;
     width: 100%;
-    bottom: -21px;
+    bottom: -17px;
     left: 0;
     background-color: var(--blue);
   }
@@ -1817,7 +1819,7 @@ footer {
     margin-bottom: 50px;
   }
 }
-.btn-mobile-menu {
+.menu-toggle {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1830,18 +1832,18 @@ footer {
   cursor: pointer;
   color: #212121;
 }
-.btn-mobile-menu:hover, .btn-mobile-menu:active, .btn-mobile-menu:focus {
+.menu-toggle:hover, .menu-toggle:active, .menu-toggle:focus {
   color: var(--blue);
   transition: var(--transition);
 }
-.btn-mobile-menu__icon {
+.menu-toggle__icon {
   width: 24px;
   height: 16px;
   fill: currentColor;
 }
 
 .mobile-menu {
-  display: flex;
+  display: block;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -1862,12 +1864,18 @@ footer {
   display: block;
   font-size: large;
 }
-.mobile-menu__icon_list-nav {
+.mobile-menu__icon__nav--a {
+  color: var(--black);
+}
+.mobile-menu__icon__nav--a :hover,
+.mobile-menu__icon__nav--a :focus {
+  color: var(--blue);
+}
+.mobile-menu__icon__list-nav {
   display: block;
   font-size: large;
 }
 .mobile-menu__icon__list-nav1 {
-  display: none;
   font-size: large;
 }
 .mobile-menu__icon__media {
@@ -1936,22 +1944,22 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  .mob-menu {
+  .mobile-menu {
     display: none;
   }
-  .mob-menu__icon {
+  .mobile-menu__icon {
     display: none;
   }
-  .mob-menu__nav {
+  .mobile-menu__nav {
     display: none;
   }
-  .mob-menu_list-nav {
+  .mobile-menu_list-nav {
     display: none;
   }
-  .mob-menu__list-nav1 {
+  .mobile-menu__list-nav1 {
     display: none;
   }
-  .mob-menu__media {
+  .mobile-menu__media {
     display: none;
   }
   .menu-close {
@@ -1960,7 +1968,7 @@ footer {
   .menu-close__icon {
     display: none;
   }
-  .btn-mobile-menu {
+  .mobile-menu {
     display: none;
   }
 }
@@ -1981,9 +1989,6 @@ footer {
     display: none;
   }
   .mobile-menu__media {
-    display: none;
-  }
-  .btn-mobile-menu {
     display: none;
   }
   .menu-close {
@@ -2183,7 +2188,6 @@ footer {
 @media screen and (min-width: 1200px) {
   .sec2,
 .sec2__lorem {
-    padding-top: 34px;
     padding-bottom: 0;
   }
   .sec2__lorem {
