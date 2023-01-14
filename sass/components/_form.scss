@@ -64,15 +64,16 @@
       stroke-width: 3px;
       stroke: var(--white);
       fill: var(--black);
+
       &:hover{
-        color: var(--blue);
+        fill: var(--blue);
         border-color: var(--blue);
         cursor: pointer;
         transition: var(--transition); 
       }
   
       &:focus{
-        color: var(--blue);
+        fill: var(--blue);
         border-color: var(--blue);
         cursor: pointer;
         transition: var(--transition);
@@ -139,14 +140,14 @@
       fill:var(--text-black);
 
       &:hover{
-        color: var(--blue);
+        fill: var(--blue);
         border-color: var(--blue);
         cursor: pointer;
         transition: var(--transition); 
       }
   
       &:focus{
-        color: var(--blue);
+        fill: var(--blue);
         border-color: var(--blue);
         cursor: pointer;
         transition: var(--transition);
