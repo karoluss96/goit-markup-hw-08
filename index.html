@@ -490,7 +490,11 @@
   </footer>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button type="button" class="modal__button" data-modal-close>X</button>
+      <button type="button" class="modal__button" data-modal-close>
+        <svg class="modal__button--svg">
+          <use href="./images/icons.svg#icon-close">
+          </use>
+        </svg></button>
       <form class="form" name="sign-up" method="POST" autocomplete="on" novalidate>
         <h2 class="form__h2">Zostaw swoje dane w formularzu poniżej</h2>
         <div class="form__div">
