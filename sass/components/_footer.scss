@@ -305,8 +305,7 @@
     .footer {
 
       &__container{
-        flex-basis: calc((100% - 20px) / 2);
-        //width: 768px;
+        width: 768px;
         display: inline-flex;
         flex-wrap: wrap;
       }
