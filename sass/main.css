@@ -6,8 +6,6 @@
 
 .visually-hidden {
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;
   height: 1px !important;
@@ -61,7 +59,7 @@
   gap: 10px;
 }
 .sec4__ul--li {
-  width: 44px;
+  flex-basis: calc((100% - 10px) / 3);
   height: 44px;
 }
 .sec4__ul--figcaption {
@@ -128,7 +126,7 @@
     padding-bottom: 0;
   }
   .sec4__list--li {
-    width: 250px;
+    flex-basis: calc((100% - 10px) / 3);
     height: 400px;
     margin-bottom: 30px;
     margin-left: 15px;
@@ -143,7 +141,7 @@
   }
   .sec4__ul--figure {
     display: inline-block;
-    width: 250px;
+    width: 100%;
     height: 200px;
     margin-bottom: 0px;
   }
@@ -861,7 +859,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .footer__container {
-    flex-basis: calc((100% - 20px) / 2);
+    width: 768px;
     display: inline-flex;
     flex-wrap: wrap;
   }
@@ -1147,7 +1145,6 @@ footer {
 .form__span {
   display: flex;
   align-items: center;
-  margin-top: 1px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1853,71 +1850,80 @@ footer {
   padding: 15px 10px 48px 40px;
   z-index: 999;
 }
-.mobile-menu__icon {
-  display: block;
+.mobile-menu__links {
+  font-weight: 500;
+  font-size: 40px;
+  padding-top: 48px;
+  line-height: 46.88px;
+  letter-spacing: 0.02em;
+  padding-left: 40px;
+}
+.mobile-menu__agency {
+  color: var(--black);
+  padding-bottom: 36px;
+}
+.mobile-menu__agency.active, .mobile-menu__agency:focus, .mobile-menu__agency:hover {
+  color: var(--blue);
+}
+.mobile-menu__portfolio {
+  color: var(--black);
+  padding-bottom: 32px;
+}
+.mobile-menu__portfolio.active, .mobile-menu__portfolio:focus, .mobile-menu__portfolio:hover {
+  color: var(--blue);
+}
+.mobile-menu__contact {
   color: var(--black);
 }
-.mobile-menu__icon:focus, .mobile-menu__icon:hover {
+.mobile-menu__contact:focus, .mobile-menu__contact:hover {
   color: var(--blue);
 }
-.mobile-menu__icon__nav {
-  display: block;
-  font-size: large;
+.mobile-menu__phone {
+  padding-top: 302px;
+  padding-bottom: 32px;
 }
-.mobile-menu__icon__nav--a {
-  color: var(--black);
-}
-.mobile-menu__icon__nav--a :hover,
-.mobile-menu__icon__nav--a :focus {
+.mobile-menu__tel {
   color: var(--blue);
+  padding-left: 40px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 39.84px;
+  letter-spacing: 0.02em;
 }
-.mobile-menu__icon__list-nav {
-  display: block;
-  font-size: large;
-}
-.mobile-menu__icon__list-nav1 {
-  font-size: large;
-}
-.mobile-menu__icon__media {
-  display: block;
-  font-size: large;
-}
-.mobile-menu__icon__list-menu1 {
-  display: block;
-  align-items: center;
-  justify-content: center;
-}
-.mobile-menu__icon__list-menu1:focus {
-  color: var(--blue);
-  transition: var(--transition);
-}
-.mobile-menu__icon__list-menu1:hover {
-  color: var(--blue);
-  transition: var(--transition);
-}
-.mobile-menu__icon__list-nav--a {
-  text-decoration: none;
-  display: flex;
-}
-.mobile-menu__icon__list-nav1 {
-  list-style-type: none;
-  margin-left: auto;
-  margin-right: -10px;
-  display: block;
-  align-items: center;
-}
-.mobile-menu__icon__list-nav1--a {
-  text-decoration: none;
+.mobile-menu__mail {
+  padding-top: 32px;
+  padding-bottom: 64px;
+  padding-left: 40px;
   color: var(--text-grey);
-  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28.13px;
+  letter-spacing: 0.02em;
 }
-.mobile-menu__icon__list-nav1--a:hover {
-  color: var(--blue);
-  transition: var(--transition);
+.mobile-menu_emil {
+  padding-top: 32px;
+  padding-bottom: 64px;
 }
-.mobile-menu__icon__list-nav1--a:focus {
+.mobile-menu__social {
+  padding-top: 64px;
+}
+.mobile-menu__social--first {
+  padding-left: 40px;
+}
+.mobile-menu__social--next {
+  padding-left: 10px;
+}
+.mobile-menu__media {
   color: var(--blue);
-  transition: var(--transition);
+  padding-bottom: 48px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+.mobile-menu__separ {
+  padding-left: 10px;
+  color: var(--text-grey);
 }
 
 .menu-close {
@@ -1925,7 +1931,7 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  color: #212121;
+  color: var(--text-black);
   border: none;
   margin-left: auto;
   cursor: pointer;
