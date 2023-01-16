@@ -32,6 +32,7 @@
   align-items: center;
   width: 70px;
   height: 70px;
+  margin-left: 120px;
 }
 
 .sec2{
@@ -76,6 +77,9 @@
     display: inline-flex;
     width: 350px;
   }
+  .ics{
+    margin-left: 0;
+  }
   .section {
  
     &__port1{
@@ -96,6 +100,7 @@
   }
   .ics{
     width: 100%;
+    margin-left: 0;
   }
   .sec2{
     width: 1200px;
@@ -126,13 +131,13 @@
       width: 1200px;
       margin-inline: auto;
       padding-top: 94px;
-      padding-bottom: 56px;
+      padding-bottom: 50px;
     }
   
     &__port2{
       width: 1200px;
       margin-inline: auto;
-      padding-bottom: 50px;
+      padding-bottom: 94px;
     }
   }
 }

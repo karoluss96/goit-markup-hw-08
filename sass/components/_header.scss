@@ -49,13 +49,13 @@
 
 // Tablet + Desktop 768 nie ma tego//
 
-@media screen and (min-width: 768px) {
-  .btn-mobile-menu {
-      display:none;
-  }
-}
+  
 
 @media screen and (min-width: 768px) {
+  .btn-mobile-menu {
+    display:none;
+  }
+
   .header{
     &__link{
       text-decoration: none;

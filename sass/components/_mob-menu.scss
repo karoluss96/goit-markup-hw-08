@@ -30,7 +30,7 @@
 .mobile-menu{
     display: block;
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     position: fixed;
     background-color: #fff;
     top: 0;
@@ -149,22 +149,6 @@
   @media screen and(min-width: 768px) {
     .mobile-menu{
       display: none;
-      &__icon{
-        display: none;
-      }
-
-      &__nav{
-        display: none;
-      }
-
-      &_list-nav{
-        display: none;
-      }
-  
-      &__list-nav1{
-        display: none;
-      } 
-
        &__media{
         display: none;
       }
@@ -179,25 +163,14 @@
     .mobile-menu {
       display: none;
     }
+    .menu-toggle{
+      display: none;
+    }
 }
   
   @media screen and(min-width: 1200px) {
     .mobile-menu{
       display: none;
-      &__icon{
-        display: none;
-      }
-      &__nav{
-        display: none;
-      }
-
-    &_list-nav{
-        display: none;
-      }
-  
-    &__list-nav1{
-        display: none;
-      }  
 
     &__media{
         display: none;
@@ -208,5 +181,8 @@
         &__icon{
             display: none;
         }
+    }
+    .menu-toggle{
+      display: none;
     }
 }   
