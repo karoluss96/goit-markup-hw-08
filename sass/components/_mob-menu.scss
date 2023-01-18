@@ -1,3 +1,10 @@
+.is-open{
+  transform: translateX(0);
+  transition: var(--transition);
+  opacity: 1;
+  visibility: visible;
+}
+
 .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -11,11 +18,11 @@
     cursor: pointer;
     color: #212121;
     
-    &:hover,
+    &:hover,tra
     &:active,
     &:focus {
         color: var(--blue);
-        transition:var(--transition);
+        transition: background-color 0.2s;
   
     }
   
@@ -41,7 +48,7 @@
       font-weight: 500;
       font-size: 40px;
       padding-top: 48px;
-      line-height: 46.88px;
+      line-height: 0.5;
       letter-spacing: 0.02em;
       padding-left: 40px;
       
@@ -80,7 +87,7 @@
       padding-left: 40px;
       font-weight: 500;
       font-size: 34px;
-      line-height: 39.84px;
+      line-height: 0.58;
       letter-spacing: 0.02em;
     }
     &__mail{
@@ -90,7 +97,7 @@
       color: var(--text-grey);
       font-weight: 500;
       font-size: 24px;
-      line-height: 28.13px;
+      line-height: 0.83;
       letter-spacing: 0.02em;
     }
     &_emil{
@@ -111,7 +118,7 @@
       padding-bottom: 48px;
       font-weight: 500;
       font-size: 18px;
-      line-height: 22px;
+      line-height: 1.11;
       letter-spacing: 0.02em;
     }
     &__separ{
@@ -136,11 +143,10 @@
     }
     &__icon{
         color: var(--black);
-        transition: var(--transition);
         &:focus,
         &:hover{
             color: var(--blue);
-            transition: var(--transition);
+            transition: background-color 0.2s;
         }
 
     }
