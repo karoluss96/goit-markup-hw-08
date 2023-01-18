@@ -168,7 +168,7 @@
     display: flex;
   }
   .sec4__ul--figcaption {
-    position: absolute;
+    position: relative;
   }
   .sec4__ul--figure {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -532,6 +532,7 @@ footer {
   height: 60px;
 }
 .sec5__ul--a {
+  display: block;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   fill: #AFB1B8;
@@ -875,10 +876,12 @@ footer {
   }
   .footer__social {
     margin-top: 0px;
+    margin-left: 25px;
   }
   .footer__send {
     margin-top: 0px;
     padding: 0;
+    margin-left: 180px;
   }
   .footer__send--newsletter {
     margin-left: 0px;
@@ -1813,6 +1816,13 @@ footer {
     margin-bottom: 50px;
   }
 }
+.is-open {
+  transform: translateX(0);
+  transition: var(--transition);
+  opacity: 1;
+  visibility: visible;
+}
+
 .menu-toggle {
   display: flex;
   flex-direction: column;
@@ -1826,9 +1836,9 @@ footer {
   cursor: pointer;
   color: #212121;
 }
-.menu-toggle:hover, .menu-toggle:active, .menu-toggle:focus {
+.menu-toggle:hover, tra .menu-toggle:active, .menu-toggle:focus {
   color: var(--blue);
-  transition: var(--transition);
+  transition: background-color 0.2s;
 }
 .menu-toggle__icon {
   width: 24px;
@@ -1851,7 +1861,7 @@ footer {
   font-weight: 500;
   font-size: 40px;
   padding-top: 48px;
-  line-height: 46.88px;
+  line-height: 0.5;
   letter-spacing: 0.02em;
   padding-left: 40px;
 }
@@ -1884,7 +1894,7 @@ footer {
   padding-left: 40px;
   font-weight: 500;
   font-size: 34px;
-  line-height: 39.84px;
+  line-height: 0.58;
   letter-spacing: 0.02em;
 }
 .mobile-menu__mail {
@@ -1894,7 +1904,7 @@ footer {
   color: var(--text-grey);
   font-weight: 500;
   font-size: 24px;
-  line-height: 28.13px;
+  line-height: 0.83;
   letter-spacing: 0.02em;
 }
 .mobile-menu_emil {
@@ -1915,7 +1925,7 @@ footer {
   padding-bottom: 48px;
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
 }
 .mobile-menu__separ {
@@ -1939,11 +1949,10 @@ footer {
 }
 .menu-close__icon {
   color: var(--black);
-  transition: var(--transition);
 }
 .menu-close__icon:focus, .menu-close__icon:hover {
   color: var(--blue);
-  transition: var(--transition);
+  transition: background-color 0.2s;
 }
 
 @media screen and (min-width: 768px) {
@@ -1988,8 +1997,8 @@ footer {
   padding-bottom: 94px;
 }
 .section__port1 {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 .section__port2 {
   margin-left: 15px;
