@@ -444,12 +444,11 @@ footer {
 }
 .container {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
+  margin: 0 auto;
   padding: 0 10px;
   transition-property: background-color;
   transition-duration: 250ms;
+  max-width: 480px;
 }
 .container--header-mobile {
   display: flex;
@@ -472,7 +471,7 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: none;
     padding: 0 39px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -487,6 +486,7 @@ footer {
 }
 @media screen and (min-width: 1200px) {
   .container {
+    max-width: 1200px;
     margin-inline: auto;
     width: 1200px;
     padding: 15px 15px;
@@ -1816,11 +1816,25 @@ footer {
     margin-bottom: 50px;
   }
 }
-.is-open {
-  transform: translateX(0);
+.menu-container {
+  transform: translateX(100%);
+  display: block;
+  width: 100vw;
+  height: 150vh;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  padding: 48px 40px;
+  z-index: 999;
+  opacity: 1;
+  transition: background-color 0.2s;
+}
+.menu-container .is-open {
   transition: var(--transition);
   opacity: 1;
   visibility: visible;
+  transform: translateX(0);
 }
 
 .menu-toggle {
@@ -1836,7 +1850,7 @@ footer {
   cursor: pointer;
   color: #212121;
 }
-.menu-toggle:hover, tra .menu-toggle:active, .menu-toggle:focus {
+.menu-toggle:hover, .menu-toggle:active, .menu-toggle:focus {
   color: var(--blue);
   transition: background-color 0.2s;
 }
@@ -1846,17 +1860,6 @@ footer {
   fill: currentColor;
 }
 
-.mobile-menu {
-  display: block;
-  width: 100vw;
-  height: 150vh;
-  position: fixed;
-  background-color: #fff;
-  top: 0;
-  right: 0;
-  padding: 15px 10px 48px 40px;
-  z-index: 999;
-}
 .mobile-menu__links {
   font-weight: 500;
   font-size: 40px;
