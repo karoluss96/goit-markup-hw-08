@@ -1,11 +1,10 @@
 .container{
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
+  margin: 0 auto;
   padding: 0 10px;
   transition-property: background-color;
   transition-duration: 250ms;
+  max-width: 480px;
   &--header-mobile {
     display: flex;
     justify-content: space-between;
@@ -27,7 +26,7 @@
 
 @media screen and(min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: none;
     padding: 0 39px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -43,6 +42,7 @@
 
 @media screen and(min-width: 1200px) {
   .container {
+    max-width: 1200px;
     margin-inline: auto;
     width: 1200px;
     padding: 15px 15px;

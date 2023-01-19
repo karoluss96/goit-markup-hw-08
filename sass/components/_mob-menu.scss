@@ -1,8 +1,23 @@
-.is-open{
-  transform: translateX(0);
-  transition: var(--transition);
+.menu-container{
+  transform: translateX(100%);
+  display: block;
+  width: 100vw;
+  height: 150vh;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  padding: 48px 40px;
+  z-index: 999;
   opacity: 1;
-  visibility: visible;
+  transition: background-color 0.2s;
+
+  & .is-open{
+    transition: var(--transition);
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
 }
 
 .menu-toggle {
@@ -18,7 +33,7 @@
     cursor: pointer;
     color: #212121;
     
-    &:hover,tra
+    &:hover,
     &:active,
     &:focus {
         color: var(--blue);
@@ -35,15 +50,6 @@
 
 
 .mobile-menu{
-    display: block;
-    width: 100vw;
-    height: 150vh;
-    position: fixed;
-    background-color: #fff;
-    top: 0;
-    right: 0;
-    padding: 15px 10px 48px 40px;
-    z-index: 999;
     &__links{
       font-weight: 500;
       font-size: 40px;
