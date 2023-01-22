@@ -1,0 +1,146 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__port1{
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  &__port2{
+    margin-left: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+
+.ic{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 120px;
+  padding: 25px 0;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: var(--grey);
+  fill: #afb1b8;
+  transition-property: fill, background-color;
+  transition: var(--transition);
+  display: block;
+}
+
+.ics{
+  text-align: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+}
+
+.sec2{
+  font-size: 14px;
+  line-height: 1.14;
+  justify-content: space-between;
+  background-color: var(--white);
+  gap:30px;
+  padding-top: 0;
+  letter-spacing: 0.03em;
+  align-items: center;
+  display: block;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 100px;
+  }
+  @media screen and (max-width: 479px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+.sec4{
+  background-color: #f5f4fa;
+  font-size: 16px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.sec5{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width:768px){
+  .sec2{
+    margin-inline: auto;
+    padding-top: 94px;
+    display: inline-flex;
+  }
+  .ic{
+    display: inline-flex;
+    width: 350px;
+  }
+  .ics{
+    margin-left: 0;
+  }
+  .section {
+ 
+    &__port1{
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  
+    &__port2{
+      padding-bottom: 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .ic{
+    display: flex;
+    width: 100%;
+  }
+  .ics{
+    width: 100%;
+    margin-left: 0;
+  }
+  .sec2{
+    width: 1200px;
+    display: flex;
+  }
+  .sec3{
+    margin-inline: auto;
+    width: 1200px;
+    display: flex;
+    background-color: var(--white);
+    font-size: 14px;
+    line-height: 1.14;
+    justify-content: space-between
+  }
+  .sec4{
+    background-color: var(--grey);
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .sec5{
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .section {
+ 
+    &__port1{
+      width: 1200px;
+      margin-inline: auto;
+      padding-top: 94px;
+      padding-bottom: 50px;
+    }
+  
+    &__port2{
+      width: 1200px;
+      margin-inline: auto;
+      padding-bottom: 94px;
+    }
+  }
+}
+
+
+
