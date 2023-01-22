@@ -2032,7 +2032,7 @@ footer {
   fill: #afb1b8;
   transition-property: fill, background-color;
   transition: var(--transition);
-  display: block;
+  display: flex;
 }
 
 .ics {
