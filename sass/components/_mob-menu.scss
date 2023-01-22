@@ -1,8 +1,8 @@
 .menu-container{
   transform: translateX(100%);
-  display: block;
+  display: none;
   width: 100vw;
-  height: 150vh;
+  height: 100vh;
   position: fixed;
   background-color: #fff;
   top: 0;
@@ -12,7 +12,8 @@
   opacity: 1;
   transition: background-color 0.2s;
 
-  & .is-open{
+  &.is-open{
+    display: block;
     transition: var(--transition);
     opacity: 1;
     visibility: visible;
@@ -50,13 +51,13 @@
 
 
 .mobile-menu{
+  margin-bottom: 5px;
     &__links{
       font-weight: 500;
       font-size: 40px;
-      padding-top: 48px;
+      padding-bottom: 36px;
       line-height: 0.5;
       letter-spacing: 0.02em;
-      padding-left: 40px;
       
     }
     &__agency{
@@ -84,13 +85,18 @@
         color: var(--blue);
         }
     }
+    &__con{
+      margin-top: 302px;
+      display: flex;
+      flex-direction:column;
+      justify-content:space-between;     
+      margin-bottom: 32px;
+    }
     &__phone{
-      padding-top: 302px;
       padding-bottom: 32px;
     }
     &__tel{
       color: var(--blue);
-      padding-left: 40px;
       font-weight: 500;
       font-size: 34px;
       line-height: 0.58;
@@ -99,7 +105,6 @@
     &__mail{
       padding-top: 32px;
       padding-bottom: 64px;
-      padding-left: 40px;
       color: var(--text-grey);
       font-weight: 500;
       font-size: 24px;
@@ -112,12 +117,6 @@
     }
     &__social{
       padding-top: 64px; 
-      &--first{
-        padding-left: 40px;
-      } 
-      &--next{
-        padding-left: 10px;
-      }
     }
     &__media{
       color: var(--blue);
