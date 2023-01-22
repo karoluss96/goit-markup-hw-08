@@ -25,14 +25,14 @@
   fill: #afb1b8;
   transition-property: fill, background-color;
   transition: var(--transition);
-  display: block;
+  display: flex;
 }
 
 .ics{
+  text-align: center;
   align-items: center;
   width: 70px;
   height: 70px;
-  margin-left: 120px;
 }
 
 .sec2{

@@ -19,6 +19,9 @@
     transition-timing-function: ease-in-out;
   }
   .modal{
+    max-width: 450px;
+    width: 100%;
+    margin: 0 15px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -157,7 +160,7 @@
     &--input{
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
-      width: 448px;
+      width: 370px;
       height: 40px;
       margin-top: 4px;
       text-indent: 42px;
@@ -188,7 +191,7 @@
     }
 
     &--textarea{
-      width: 448px;
+      width: 370px;
       height: 120px;
       font-size: 12px;
       padding: 12px 16px;
@@ -227,8 +230,8 @@
   &__span{
     display: flex;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--text-grey);
     margin-left: 8px;
@@ -241,7 +244,7 @@
       height: 15px;
       outline: 1px solid #212121;
       border-radius: 2px;
-      margin-right: 9px;
+      margin-right: 8px;
       transition: var(--transition);
     }
 
@@ -252,7 +255,7 @@
       color: var(--blue);
       transition: var(--transition);
       transition-property: text-decoration, color;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.01em;
     
       &:hover{
         cursor: pointer;
@@ -312,15 +315,16 @@
   }
 
   @media screen and (min-width: 768px) {
+    .modal{
+      max-width: none;
+      width: auto;
+    }
     .form{
       &__checkbox{
         font-size: 10px;
-        line-height: 1.11;
+        line-height: 1.17;
       }
-      &__span--a{
-        top: 18px;
-        left: 21px;
-      }
+      
     }
   }
 
@@ -331,5 +335,21 @@
         font-size: 14px;
         line-height: 1.71;
       }
+      &__label{
+        &--input{
+          width: 448px;
+        }
+        &--textarea{
+          width: 448px;
+        }
+    }
+      &__span{
+        font-size: 14px;
+        line-height: 1.71;
+        &--a{
+          letter-spacing: 0.03em;
+        }
+      }
+
     }
   }
